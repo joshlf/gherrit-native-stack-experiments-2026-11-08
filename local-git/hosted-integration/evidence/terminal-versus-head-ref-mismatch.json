@@ -1,0 +1,120 @@
+{
+  "merge_request": {
+    "start": "2026-11-08T23:21:34.966222+00:00",
+    "end": "2026-11-08T23:21:35.314982+00:00",
+    "http": 202,
+    "data": {
+      "details": {
+        "bypass_rules": false,
+        "expected_head_sha": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "merge_action": "direct_merge",
+        "merge_method": "squash",
+        "message": "Merge request enqueued.",
+        "uuid": "fa731902-d616-4aa1-9598-672dd28b50e7"
+      },
+      "status": "pending"
+    }
+  },
+  "terminal_poll": {
+    "start": "2026-11-08T23:21:38.611783+00:00",
+    "end": "2026-11-08T23:21:38.842657+00:00",
+    "data": {
+      "details": {
+        "message": "Pull request was merged.",
+        "sha": "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+      },
+      "status": "merged"
+    }
+  },
+  "original_submitted_B_range": {
+    "base": "84ff590243f50d703c26712bf28a986b412bfd66",
+    "tip": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0"
+  },
+  "original_submitted_B_object": {
+    "sha": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+    "header": "tree 382bf79f041a01df8ca41cbb63b991734f42d41b\nparent 84ff590243f50d703c26712bf28a986b412bfd66\nauthor Josh Liebow-Feeser <hello@joshlf.com> 946684803 +0000\ncommitter Josh Liebow-Feeser <hello@joshlf.com> 946684803 +0000",
+    "message": "Consume the original record\n\nChange-Id: integration-B\n\nAgent-authored-by: AI agent acting on joshlf's behalf\n"
+  },
+  "PR_B_read": {
+    "start": "2026-11-08T23:21:39.184033+00:00",
+    "end": "2026-11-08T23:21:39.581906+00:00",
+    "head": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+    "base_ref": "exp/integration/repeat-01/trunk",
+    "base_sha": "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+  },
+  "group_read": {
+    "start": "2026-11-08T23:21:39.584149+00:00",
+    "end": "2026-11-08T23:21:39.894195+00:00",
+    "B_members": [
+      {
+        "base": {
+          "ref": "exp/integration/repeat-01/trunk",
+          "repo": {
+            "id": 1450723431,
+            "name": "gherrit-native-stack-experiments-2026-11-08",
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08"
+          },
+          "sha": "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+        },
+        "draft": false,
+        "head": {
+          "ref": "exp/integration/repeat-01/B",
+          "repo": {
+            "id": 1450723431,
+            "name": "gherrit-native-stack-experiments-2026-11-08",
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08"
+          },
+          "sha": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0"
+        },
+        "html_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/63",
+        "id": 5216180743,
+        "merged_at": null,
+        "node_id": "PR_kwDOVnhIZ88AAAABNuiaBw",
+        "number": 63,
+        "state": "open",
+        "title": "Integration experiment: canonical B",
+        "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/63",
+        "user": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/1046063?v=4",
+          "events_url": "https://api.github.com/users/joshlf/events{/privacy}",
+          "followers_url": "https://api.github.com/users/joshlf/followers",
+          "following_url": "https://api.github.com/users/joshlf/following{/other_user}",
+          "gists_url": "https://api.github.com/users/joshlf/gists{/gist_id}",
+          "gravatar_id": "",
+          "html_url": "https://github.com/joshlf",
+          "id": 1046063,
+          "login": "joshlf",
+          "node_id": "MDQ6VXNlcjEwNDYwNjM=",
+          "organizations_url": "https://api.github.com/users/joshlf/orgs",
+          "received_events_url": "https://api.github.com/users/joshlf/received_events",
+          "repos_url": "https://api.github.com/users/joshlf/repos",
+          "site_admin": false,
+          "starred_url": "https://api.github.com/users/joshlf/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/joshlf/subscriptions",
+          "type": "User",
+          "url": "https://api.github.com/users/joshlf",
+          "user_view_type": "public"
+        }
+      }
+    ]
+  },
+  "ls_remote_B": "933e62a007da8cc6131e683774a34bddf644af55",
+  "ls_remote_timing_bounds": {
+    "after_group_read_end": "2026-11-08T23:21:39.894195+00:00",
+    "before_guard_recorded_at": "2026-11-08T23:21:40.049230+00:00",
+    "exact_command_timestamp_available": false
+  },
+  "rewritten_B_object": {
+    "sha": "933e62a007da8cc6131e683774a34bddf644af55",
+    "header": "tree 382bf79f041a01df8ca41cbb63b991734f42d41b\nparent 9764253d75c6ed4bfda1ebe562618fa6644a49d5\nauthor Josh Liebow-Feeser <hello@joshlf.com> 946684803 +0000\ncommitter Josh Liebow-Feeser <joshlf@users.noreply.github.com> 1794180098 -0500",
+    "message": "Consume the original record\n\nChange-Id: integration-B\n\nAgent-authored-by: AI agent acting on joshlf's behalf\n"
+  },
+  "failed_guard": {
+    "actual": "933e62a007da8cc6131e683774a34bddf644af55",
+    "at": "2026-11-08T23:21:40.049230+00:00",
+    "expected": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+    "label": "old-A-landed-first B head matches ref",
+    "passed": false
+  },
+  "interpretation": "The sampled PR API head and later ref read disagree. These reads do not distinguish cache/observation lag, a concurrent rewrite, or other causes, and do not establish provider settlement."
+}

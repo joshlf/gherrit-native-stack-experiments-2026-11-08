@@ -1,0 +1,12 @@
+{
+  "label": "complete-append-rejected",
+  "method": "POST",
+  "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks/28/add",
+  "payload": {
+    "pull_requests": [
+      29
+    ]
+  },
+  "start": "2026-11-08T23:00:19.315331+00:00",
+  "monotonic_start": 132.949724875
+}

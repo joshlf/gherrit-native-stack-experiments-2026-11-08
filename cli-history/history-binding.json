@@ -1,0 +1,25 @@
+{
+  "pr": 10,
+  "marker": "<!-- gherrit-history:v1 artifact=cli-history-2026-11-08 -->",
+  "v1": {
+    "base": "ed86001d0772bad37723d34c42172793a1065def",
+    "tip": "577c03e83eee2c544e685bcf2d7158e371d8ec85"
+  },
+  "comment_ids": [
+    6728274710,
+    6728278369
+  ],
+  "status": "reattached-v2",
+  "current_comment_id": 6728278369,
+  "current_comment_node_id": "IC_kwDOVnhIZ88AAAABkQlhYQ",
+  "comment_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/10#issuecomment-6728278369",
+  "v2": {
+    "base": "378b07ca06b99dc523d4c42b39edb0a336b6bf39",
+    "tip": "bbdc65868b6b9afb14908b888186e73382266b42"
+  },
+  "superseded_comment_id": 6728274710,
+  "size_probe_comment_id": 6728280154,
+  "expected_author_id": 1046063,
+  "expected_author_login": "joshlf",
+  "expected_issue_url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/issues/10"
+}

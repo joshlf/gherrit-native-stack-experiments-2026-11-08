@@ -1,0 +1,1336 @@
+{
+  "checkpoint": {
+    "accepted_local": {
+      "B": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "F": {
+        "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+        "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      }
+    },
+    "authored": {
+      "B": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "F": {
+        "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+        "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      }
+    },
+    "confirmed_at": "2026-11-08T23:24:42.226673+00:00",
+    "incorporated": {
+      "B": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "F": {
+        "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+        "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      }
+    },
+    "snapshot": "rebuilt-publication-confirmed"
+  },
+  "checks": [
+    {
+      "actual": true,
+      "at": "2026-11-08T23:21:00.168201+00:00",
+      "expected": true,
+      "label": "authorized main seed",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "at": "2026-11-08T23:21:02.679255+00:00",
+      "expected": 0,
+      "label": "first-publication atomic push succeeds",
+      "passed": true
+    },
+    {
+      "actual": 201,
+      "at": "2026-11-08T23:21:04.924280+00:00",
+      "expected": 201,
+      "label": "A PR created",
+      "passed": true
+    },
+    {
+      "actual": 201,
+      "at": "2026-11-08T23:21:07.148945+00:00",
+      "expected": 201,
+      "label": "B PR created",
+      "passed": true
+    },
+    {
+      "actual": 201,
+      "at": "2026-11-08T23:21:08.866656+00:00",
+      "expected": 201,
+      "label": "original group created",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:21:09.340452+00:00",
+      "expected": 200,
+      "label": "original-published A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:21:09.340813+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "original-published A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:21:09.809610+00:00",
+      "expected": 200,
+      "label": "original-published B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:21:09.809968+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "original-published B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:21:10.261528+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "original-published A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+      "at": "2026-11-08T23:21:10.262932+00:00",
+      "expected": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+      "label": "original-published B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": [
+        62,
+        63
+      ],
+      "at": "2026-11-08T23:21:10.264261+00:00",
+      "expected": [
+        62,
+        63
+      ],
+      "label": "original exact membership",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:21:10.374820+00:00",
+      "expected": true,
+      "label": "unpublished-dependent-source executable dependency",
+      "passed": true
+    },
+    {
+      "actual": 202,
+      "at": "2026-11-08T23:21:36.323852+00:00",
+      "expected": 202,
+      "label": "land-old-A request accepted",
+      "passed": true
+    },
+    {
+      "actual": "pending",
+      "at": "2026-11-08T23:21:36.326822+00:00",
+      "expected": "pending",
+      "label": "land-old-A initial state pending",
+      "passed": true
+    },
+    {
+      "actual": {
+        "expected_head_sha": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "merge_action": "direct_merge",
+        "merge_method": "squash"
+      },
+      "at": "2026-11-08T23:21:36.328806+00:00",
+      "expected": {
+        "expected_head_sha": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "merge_action": "direct_merge",
+        "merge_method": "squash"
+      },
+      "label": "land-old-A receipt matches requested intent",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:21:36.601118+00:00",
+      "expected": 200,
+      "label": "land-old-A poll HTTP",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:21:38.843429+00:00",
+      "expected": 200,
+      "label": "land-old-A poll HTTP",
+      "passed": true
+    },
+    {
+      "actual": "merged",
+      "at": "2026-11-08T23:21:38.843878+00:00",
+      "expected": "merged",
+      "label": "land-old-A actually merged",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:21:39.182039+00:00",
+      "expected": 200,
+      "label": "old-A-landed-first A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:21:39.183129+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "old-A-landed-first A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:21:39.583103+00:00",
+      "expected": 200,
+      "label": "old-A-landed-first B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:21:39.583533+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "old-A-landed-first B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:21:40.047125+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "old-A-landed-first A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "933e62a007da8cc6131e683774a34bddf644af55",
+      "at": "2026-11-08T23:21:40.049230+00:00",
+      "expected": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+      "label": "old-A-landed-first B head matches ref",
+      "passed": false
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:22:55.293752+00:00",
+      "expected": 200,
+      "label": "old-A-landed-recovery-01-first A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:22:55.294521+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "old-A-landed-recovery-01-first A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:22:55.679388+00:00",
+      "expected": 200,
+      "label": "old-A-landed-recovery-01-first B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:22:55.680386+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "old-A-landed-recovery-01-first B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:22:56.160711+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "old-A-landed-recovery-01-first A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "933e62a007da8cc6131e683774a34bddf644af55",
+      "at": "2026-11-08T23:22:56.161316+00:00",
+      "expected": "933e62a007da8cc6131e683774a34bddf644af55",
+      "label": "old-A-landed-recovery-01-first B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:22:58.688360+00:00",
+      "expected": 200,
+      "label": "old-A-landed-recovery-01-second A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:22:58.688971+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "old-A-landed-recovery-01-second A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:22:59.248981+00:00",
+      "expected": 200,
+      "label": "old-A-landed-recovery-01-second B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:22:59.249476+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "old-A-landed-recovery-01-second B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:22:59.701599+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "old-A-landed-recovery-01-second A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "933e62a007da8cc6131e683774a34bddf644af55",
+      "at": "2026-11-08T23:22:59.702077+00:00",
+      "expected": "933e62a007da8cc6131e683774a34bddf644af55",
+      "label": "old-A-landed-recovery-01-second B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:22:59.702576+00:00",
+      "expected": true,
+      "label": "A terminal after native landing",
+      "passed": true
+    },
+    {
+      "actual": [
+        "open",
+        false
+      ],
+      "at": "2026-11-08T23:22:59.703479+00:00",
+      "expected": [
+        "open",
+        false
+      ],
+      "label": "canonical B remains open",
+      "passed": true
+    },
+    {
+      "actual": [
+        "933e62a007da8cc6131e683774a34bddf644af55",
+        "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+      ],
+      "at": "2026-11-08T23:22:59.703925+00:00",
+      "expected": [
+        "933e62a007da8cc6131e683774a34bddf644af55",
+        "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+      ],
+      "label": "two finite samples agree on B and trunk",
+      "passed": true
+    },
+    {
+      "actual": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+      "at": "2026-11-08T23:22:59.918881+00:00",
+      "expected": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+      "label": "native B comparison parent is actual trunk",
+      "passed": true
+    },
+    {
+      "actual": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n"
+      },
+      "at": "2026-11-08T23:23:00.092824+00:00",
+      "expected": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n"
+      },
+      "label": "landed A exact tree",
+      "passed": true
+    },
+    {
+      "actual": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/consumer.py": "from .model import Record\n\ndef consume():\n    return Record().legacy\n",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n"
+      },
+      "at": "2026-11-08T23:23:00.285298+00:00",
+      "expected": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/consumer.py": "from .model import Record\n\ndef consume():\n    return Record().legacy\n",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n"
+      },
+      "label": "rewritten hosted B exact tree",
+      "passed": true
+    },
+    {
+      "actual": [
+        "integration_case/model.py"
+      ],
+      "at": "2026-11-08T23:23:00.500882+00:00",
+      "expected": [
+        "integration_case/model.py"
+      ],
+      "label": "F owns only its added field",
+      "passed": true
+    },
+    {
+      "actual": [
+        "integration_case/consumer.py"
+      ],
+      "at": "2026-11-08T23:23:00.510110+00:00",
+      "expected": [
+        "integration_case/consumer.py"
+      ],
+      "label": "B owns only its consumer change",
+      "passed": true
+    },
+    {
+      "actual": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "at": "2026-11-08T23:23:00.520420+00:00",
+      "expected": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "label": "B is directly above F",
+      "passed": true
+    },
+    {
+      "actual": "Consume the retained field\n\nChange-Id: integration-B\n\nAgent-authored-by: AI agent acting on joshlf's behalf\n",
+      "at": "2026-11-08T23:23:00.538708+00:00",
+      "expected": "Consume the retained field\n\nChange-Id: integration-B\n\nAgent-authored-by: AI agent acting on joshlf's behalf\n",
+      "label": "B message preserved exactly",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:23:00.650717+00:00",
+      "expected": true,
+      "label": "first-import-B-after-F executable dependency",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "at": "2026-11-08T23:23:00.752164+00:00",
+      "expected": false,
+      "label": "negative-B-without-F executable dependency",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:23:25.574778+00:00",
+      "expected": 204,
+      "label": "release original eligible members",
+      "passed": false
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:30.588999+00:00",
+      "expected": 200,
+      "label": "release original eligible members with merged A retained",
+      "passed": true
+    },
+    {
+      "actual": [
+        62
+      ],
+      "at": "2026-11-08T23:24:30.589681+00:00",
+      "expected": [
+        62
+      ],
+      "label": "residual original group contains only merged A",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:30.898567+00:00",
+      "expected": 200,
+      "label": "released-original A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:24:30.899267+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "released-original A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:31.310162+00:00",
+      "expected": 200,
+      "label": "released-original B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:24:31.310964+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "released-original B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:24:31.750641+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "released-original A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "933e62a007da8cc6131e683774a34bddf644af55",
+      "at": "2026-11-08T23:24:31.751335+00:00",
+      "expected": "933e62a007da8cc6131e683774a34bddf644af55",
+      "label": "released-original B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": null,
+      "at": "2026-11-08T23:24:31.751902+00:00",
+      "expected": null,
+      "label": "B released from old native group",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:24:31.752470+00:00",
+      "expected": true,
+      "label": "A remains terminal after release",
+      "passed": true
+    },
+    {
+      "actual": "exp/integration/repeat-01/trunk",
+      "at": "2026-11-08T23:24:31.753004+00:00",
+      "expected": "exp/integration/repeat-01/trunk",
+      "label": "B already parked at trunk after native prefix",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "at": "2026-11-08T23:24:32.944713+00:00",
+      "expected": 0,
+      "label": "rebuilt-coupled-heads-and-archives atomic push succeeds",
+      "passed": true
+    },
+    {
+      "actual": 201,
+      "at": "2026-11-08T23:24:35.027976+00:00",
+      "expected": 201,
+      "label": "F PR created",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:36.843317+00:00",
+      "expected": 200,
+      "label": "B final base set to F",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:37.270362+00:00",
+      "expected": 200,
+      "label": "final-adjacent-bases A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:24:37.272766+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "final-adjacent-bases A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:37.618203+00:00",
+      "expected": 200,
+      "label": "final-adjacent-bases B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:24:37.618984+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "final-adjacent-bases B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:37.968153+00:00",
+      "expected": 200,
+      "label": "final-adjacent-bases F read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "at": "2026-11-08T23:24:37.968849+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "label": "final-adjacent-bases F retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:24:38.374219+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "final-adjacent-bases A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+      "at": "2026-11-08T23:24:38.374932+00:00",
+      "expected": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+      "label": "final-adjacent-bases B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "at": "2026-11-08T23:24:38.375560+00:00",
+      "expected": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "label": "final-adjacent-bases F head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "at": "2026-11-08T23:24:38.376209+00:00",
+      "expected": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "label": "B final base adjacency",
+      "passed": true
+    },
+    {
+      "actual": 201,
+      "at": "2026-11-08T23:24:40.102118+00:00",
+      "expected": 201,
+      "label": "rebuilt F-B group registered",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:40.452610+00:00",
+      "expected": 200,
+      "label": "rebuilt-publication-confirmed A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:24:40.453383+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "rebuilt-publication-confirmed A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:40.904436+00:00",
+      "expected": 200,
+      "label": "rebuilt-publication-confirmed B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:24:40.905869+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "rebuilt-publication-confirmed B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:24:41.272980+00:00",
+      "expected": 200,
+      "label": "rebuilt-publication-confirmed F read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "at": "2026-11-08T23:24:41.273784+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "label": "rebuilt-publication-confirmed F retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:24:41.914224+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "rebuilt-publication-confirmed A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+      "at": "2026-11-08T23:24:41.915518+00:00",
+      "expected": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+      "label": "rebuilt-publication-confirmed B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "at": "2026-11-08T23:24:41.916223+00:00",
+      "expected": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "label": "rebuilt-publication-confirmed F head matches ref",
+      "passed": true
+    },
+    {
+      "actual": [
+        88,
+        63
+      ],
+      "at": "2026-11-08T23:24:41.916895+00:00",
+      "expected": [
+        88,
+        63
+      ],
+      "label": "rebuilt exact membership",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:24:41.917733+00:00",
+      "expected": true,
+      "label": "A remains terminal after rebuilt publication",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:24:41.918381+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "A v1 archive retained exactly",
+      "passed": true
+    },
+    {
+      "actual": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+      "at": "2026-11-08T23:24:41.919074+00:00",
+      "expected": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+      "label": "B v1 archive retained exactly",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "at": "2026-11-08T23:24:42.226686+00:00",
+      "expected": false,
+      "label": "captured export checkpoint excludes later edit",
+      "passed": true
+    },
+    {
+      "actual": [
+        "integration_case/consumer.py"
+      ],
+      "at": "2026-11-08T23:24:42.237046+00:00",
+      "expected": [
+        "integration_case/consumer.py"
+      ],
+      "label": "later local edit remains pending",
+      "passed": true
+    },
+    {
+      "actual": 202,
+      "at": "2026-11-08T23:25:20.502037+00:00",
+      "expected": 202,
+      "label": "land-F request accepted",
+      "passed": true
+    },
+    {
+      "actual": "pending",
+      "at": "2026-11-08T23:25:20.505188+00:00",
+      "expected": "pending",
+      "label": "land-F initial state pending",
+      "passed": true
+    },
+    {
+      "actual": {
+        "expected_head_sha": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "merge_action": "direct_merge",
+        "merge_method": "squash"
+      },
+      "at": "2026-11-08T23:25:20.507453+00:00",
+      "expected": {
+        "expected_head_sha": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "merge_action": "direct_merge",
+        "merge_method": "squash"
+      },
+      "label": "land-F receipt matches requested intent",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:20.736699+00:00",
+      "expected": 200,
+      "label": "land-F poll HTTP",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:22.987133+00:00",
+      "expected": 200,
+      "label": "land-F poll HTTP",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:25.258895+00:00",
+      "expected": 200,
+      "label": "land-F poll HTTP",
+      "passed": true
+    },
+    {
+      "actual": "merged",
+      "at": "2026-11-08T23:25:25.259871+00:00",
+      "expected": "merged",
+      "label": "land-F actually merged",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:25.581430+00:00",
+      "expected": 200,
+      "label": "F-landed-first A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:25:25.582275+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "F-landed-first A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:25.962328+00:00",
+      "expected": 200,
+      "label": "F-landed-first B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:25:25.963722+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "F-landed-first B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:26.304511+00:00",
+      "expected": 200,
+      "label": "F-landed-first F read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "at": "2026-11-08T23:25:26.306056+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "label": "F-landed-first F retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:25:27.134932+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "F-landed-first A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "at": "2026-11-08T23:25:27.136293+00:00",
+      "expected": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "label": "F-landed-first B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "at": "2026-11-08T23:25:27.137057+00:00",
+      "expected": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "label": "F-landed-first F head matches ref",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:29.449134+00:00",
+      "expected": 200,
+      "label": "F-landed-second A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:25:29.451986+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "F-landed-second A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:29.835177+00:00",
+      "expected": 200,
+      "label": "F-landed-second B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:25:29.836029+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "F-landed-second B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:30.213586+00:00",
+      "expected": 200,
+      "label": "F-landed-second F read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "at": "2026-11-08T23:25:30.215873+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "label": "F-landed-second F retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:25:30.977197+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "F-landed-second A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "at": "2026-11-08T23:25:30.978200+00:00",
+      "expected": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "label": "F-landed-second B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "at": "2026-11-08T23:25:30.979602+00:00",
+      "expected": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "label": "F-landed-second F head matches ref",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:25:30.980440+00:00",
+      "expected": true,
+      "label": "F terminal after native landing",
+      "passed": true
+    },
+    {
+      "actual": [
+        "open",
+        false
+      ],
+      "at": "2026-11-08T23:25:30.981242+00:00",
+      "expected": [
+        "open",
+        false
+      ],
+      "label": "B canonical review still open after second landing",
+      "passed": true
+    },
+    {
+      "actual": [
+        "c2f671d686eec1642775752a2139a9d2e694dc17",
+        "ce8d49b86294b945d860f53d634483fdb3f7274c"
+      ],
+      "at": "2026-11-08T23:25:30.982056+00:00",
+      "expected": [
+        "c2f671d686eec1642775752a2139a9d2e694dc17",
+        "ce8d49b86294b945d860f53d634483fdb3f7274c"
+      ],
+      "label": "two finite second samples agree",
+      "passed": true
+    },
+    {
+      "actual": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+      "at": "2026-11-08T23:25:31.205386+00:00",
+      "expected": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+      "label": "second B comparison parent is trunk",
+      "passed": true
+    },
+    {
+      "actual": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n        self.field = 'retained'\n"
+      },
+      "at": "2026-11-08T23:25:31.366700+00:00",
+      "expected": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n        self.field = 'retained'\n"
+      },
+      "label": "second landed trunk equals F tree",
+      "passed": true
+    },
+    {
+      "actual": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/consumer.py": "from .model import Record\n\ndef consume():\n    return Record().field\n",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n        self.field = 'retained'\n"
+      },
+      "at": "2026-11-08T23:25:31.841489+00:00",
+      "expected": {
+        ".github/workflows/automation.yml": "name: automation\non:\n  workflow_dispatch:\n    inputs:\n      operation:\n        type: choice\n        options: [create-pr, approve-pr]\n        required: true\n      head:\n        type: string\n        required: false\n      base:\n        type: string\n        required: false\n      title:\n        type: string\n        required: false\n      body:\n        type: string\n        required: false\n      number:\n        type: string\n        required: false\npermissions:\n  contents: read\n  pull-requests: write\njobs:\n  automation:\n    runs-on: ubuntu-latest\n    env:\n      GH_TOKEN: ${{ github.token }}\n    steps:\n      - name: Perform one explicitly dispatched experimental PR operation\n        shell: bash\n        run: |\n          mkdir -p evidence\n          python3 - <<'PYCODE'\n          import json,os,subprocess\n          from pathlib import Path\n          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())\n          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']\n          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'\n          op=inputs['operation'];notice=\"*Authored by an AI agent acting on joshlf's behalf.*\"\n          if op=='create-pr':\n            head=inputs['head'];base=inputs['base']\n            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))\n            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'\n            if notice not in body:body+='\\n\\n'+notice\n            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}\n            path=f'repos/{repo}/pulls'\n          elif op=='approve-pr':\n            number=int(inputs['number']);assert number>0\n            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))\n            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))\n            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\\n\\n'+notice}\n            path=f'repos/{repo}/pulls/{number}/reviews'\n          else:raise RuntimeError('Unsupported operation')\n          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\\n')\n          p=Path('evidence/request.json');p.write_text(json.dumps(payload))\n          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)\n          Path('evidence/response.json').write_text(result.stdout)\n          Path('evidence/stderr.txt').write_text(result.stderr)\n          print('Operation',op,'exit',result.returncode)\n          if result.returncode==0:\n            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))\n          raise SystemExit(result.returncode)\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        if: always()\n        with:\n          name: automation-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/observe.yml": "name: observe\non:\n  pull_request:\n    types: [opened, synchronize, reopened, ready_for_review]\n  merge_group:\n    types: [checks_requested]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  observe:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/stacked-only.yml": "name: stacked-only\non:\n  pull_request:\n    types: [stacked]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  stacked-only:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        ".github/workflows/trunk-filter.yml": "name: trunk-filter\non:\n  pull_request:\n    branches: [main, 'exp/**/trunk']\n    types: [opened, synchronize, reopened]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pull-requests: read\njobs:\n  trunk-filter:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262\n        with:\n          fetch-depth: 0\n          persist-credentials: false\n      - name: Capture event and actual Git state\n        shell: bash\n        run: |\n          mkdir -p evidence\n          cp \"$GITHUB_EVENT_PATH\" evidence/event.json\n          python3 - <<'PYCODE'\n          import json,os,subprocess,sys,platform\n          from pathlib import Path\n          git=lambda *args: subprocess.check_output(['git',*args],text=True).strip()\n          keys=['GITHUB_EVENT_NAME','GITHUB_SHA','GITHUB_REF','GITHUB_HEAD_REF','GITHUB_BASE_REF','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW','RUNNER_OS','RUNNER_ARCH']\n          d={'env':{k:os.environ.get(k) for k in keys},'python':sys.version,'platform':platform.platform(),'head':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'parents':git('rev-list','--parents','-n','1','HEAD'),'graph':git('log','--all','--format=%H %P %s','-n','30')}\n          Path('evidence/context.json').write_text(json.dumps(d,indent=2)+'\\n')\n          print(json.dumps(d,indent=2))\n          PYCODE\n      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\n        with:\n          name: event-${{ github.workflow }}-${{ github.run_id }}-${{ github.run_attempt }}\n          path: evidence/\n          retention-days: 30\n",
+        "README.md": "# GHerrit native-stack experiments\n\nSynthetic, disposable fixtures for [GHerrit design issue 518](https://github.com/joshlf/gherrit/issues/518).\nThis repository is an experiment, not GHerrit implementation or production work.\nAll PRs, reviews, branches, workflows and merges are experimental. No secrets or\nproduction source are stored here. Results and exact evidence are retained by\nthe coordinating agent and summarized here when the experiments finish.\n\nRemote lanes are `exp/api/**`, `exp/ci/**` and `exp/cli/**`. Each lane has one owner.\nNo workflow has a schedule. Small event/dispatch workflows capture metadata;\na bot workflow creates synthetic PRs so the existing human account can supply\nseparate-author experimental reviews without involving another person.\n\n*Authored by an AI agent acting on joshlf's behalf.*\n",
+        "baseline.txt": "synthetic baseline\n",
+        "integration_case/__init__.py": "",
+        "integration_case/consumer.py": "from .model import Record\n\ndef consume():\n    return Record().field\n",
+        "integration_case/model.py": "class Record:\n    def __init__(self):\n        self.legacy = 'ready'\n        self.field = 'retained'\n"
+      },
+      "label": "no-pending import equals hosted tree",
+      "passed": true
+    },
+    {
+      "actual": "Consume the retained field\n\nChange-Id: integration-B\n\nAgent-authored-by: AI agent acting on joshlf's behalf\n",
+      "at": "2026-11-08T23:25:31.860711+00:00",
+      "expected": "Consume the retained field\n\nChange-Id: integration-B\n\nAgent-authored-by: AI agent acting on joshlf's behalf\n",
+      "label": "no-pending import preserves hosted message",
+      "passed": true
+    },
+    {
+      "actual": [
+        "integration_case/consumer.py"
+      ],
+      "at": "2026-11-08T23:25:31.870714+00:00",
+      "expected": [
+        "integration_case/consumer.py"
+      ],
+      "label": "pending import retains only later local edit",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:25:31.961109+00:00",
+      "expected": true,
+      "label": "pending note content survives",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "at": "2026-11-08T23:25:32.064613+00:00",
+      "expected": true,
+      "label": "second-import-with-pending executable dependency",
+      "passed": true
+    },
+    {
+      "actual": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "at": "2026-11-08T23:25:32.094170+00:00",
+      "expected": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "label": "no-pending continuation uses exact hosted range",
+      "passed": true
+    },
+    {
+      "actual": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "at": "2026-11-08T23:25:32.095205+00:00",
+      "expected": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "label": "last authored export remains exact captured B",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:32.407830+00:00",
+      "expected": 200,
+      "label": "final-observation-only A read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "at": "2026-11-08T23:25:32.408871+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "label": "final-observation-only A retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:32.813213+00:00",
+      "expected": 200,
+      "label": "final-observation-only B read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "at": "2026-11-08T23:25:32.814349+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "label": "final-observation-only B retains node identity",
+      "passed": true
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:25:33.148006+00:00",
+      "expected": 200,
+      "label": "final-observation-only F read",
+      "passed": true
+    },
+    {
+      "actual": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "at": "2026-11-08T23:25:33.149290+00:00",
+      "expected": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "label": "final-observation-only F retains node identity",
+      "passed": true
+    },
+    {
+      "actual": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "at": "2026-11-08T23:25:33.927236+00:00",
+      "expected": "84ff590243f50d703c26712bf28a986b412bfd66",
+      "label": "final-observation-only A head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "at": "2026-11-08T23:25:33.928895+00:00",
+      "expected": "c2f671d686eec1642775752a2139a9d2e694dc17",
+      "label": "final-observation-only B head matches ref",
+      "passed": true
+    },
+    {
+      "actual": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "at": "2026-11-08T23:25:33.929989+00:00",
+      "expected": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "label": "final-observation-only F head matches ref",
+      "passed": true
+    },
+    {
+      "actual": {
+        "refs/heads/exp/integration/repeat-01/A": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "refs/heads/exp/integration/repeat-01/B": "c2f671d686eec1642775752a2139a9d2e694dc17",
+        "refs/heads/exp/integration/repeat-01/F": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "refs/heads/exp/integration/repeat-01/trunk": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+        "refs/tags/exp/integration/repeat-01/authored/A/v1": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "refs/tags/exp/integration/repeat-01/authored/B/v1": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+        "refs/tags/exp/integration/repeat-01/authored/B/v2": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+        "refs/tags/exp/integration/repeat-01/authored/F/v1": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      },
+      "at": "2026-11-08T23:25:33.931100+00:00",
+      "expected": {
+        "refs/heads/exp/integration/repeat-01/A": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "refs/heads/exp/integration/repeat-01/B": "c2f671d686eec1642775752a2139a9d2e694dc17",
+        "refs/heads/exp/integration/repeat-01/F": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "refs/heads/exp/integration/repeat-01/trunk": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+        "refs/tags/exp/integration/repeat-01/authored/A/v1": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "refs/tags/exp/integration/repeat-01/authored/B/v1": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+        "refs/tags/exp/integration/repeat-01/authored/B/v2": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+        "refs/tags/exp/integration/repeat-01/authored/F/v1": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      },
+      "label": "import made no additional remote ref/archive changes",
+      "passed": true
+    }
+  ],
+  "commits": {
+    "actual_hosted_first_import_B_I": "1b6268ad9ace060f73689a0d18966e1bbcfadbca",
+    "actual_hosted_first_import_B_L": "408bff62fe927676d20792194e717690f4903514",
+    "actual_hosted_first_import_B_accepted": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+    "actual_hosted_first_import_B_integrated": "3a54aac3211e5c3a68ebd2c13567c68ae6a74a10",
+    "actual_hosted_first_import_B_replay": "af083b04a3c53fdb6cc108f2acc6795dba9a9ab2",
+    "integration_A_local": "257892e30c895fb5a56d1a237cc46ae8fc9853dd",
+    "integration_A_v1": "84ff590243f50d703c26712bf28a986b412bfd66",
+    "integration_B_after_capture": "245b688d46bf3b054b177321286fa1bf819eab60",
+    "integration_B_local": "70aa6d442ac1c37c704c9b98c2986a0f786e69fc",
+    "integration_B_v1": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+    "integration_F": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+    "integration_P": "714662ab71f9999c9399fc641c370a08e050ece9",
+    "landed_A_pending_delta": "b83f0641b82232c861605c5a4cacf3f55c132f66",
+    "second_no_pending_B_I": "63ee026295ffd6463f143a9211aa258f0814517f",
+    "second_no_pending_B_L": "7bd69f31a23e0ead0fe16fb6a72b00d94e6bcf82",
+    "second_no_pending_B_accepted": "b4d1bde9ca27f551ab5a818ada4b5bcf13c52509",
+    "second_no_pending_B_integrated": "0cd5dd2d062f36eee28c096e80009a420f85d7ca",
+    "second_no_pending_B_replay": "a44b2fb7e8ab6a6b20171b4b189083a5f8d56275",
+    "second_with_pending_B_I": "0d5381ea46a01b0fd06f34f3e1637a17bdddc46b",
+    "second_with_pending_B_L": "9911b348127cfe7b4314372c1e35e1033fac3df6",
+    "second_with_pending_B_accepted": "bbbf83f031ddcc3868ec14426e78f1ed218fd72a",
+    "second_with_pending_B_integrated": "e5bdf8d374a757fb376619b70e6020078a835c33",
+    "second_with_pending_B_replay": "0ed0ac376da223cd6756248765bd394476d31dd2"
+  },
+  "first_import": {
+    "B": {
+      "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+    },
+    "F": {
+      "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+      "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+    },
+    "algorithm": [
+      {
+        "accepted_local": {
+          "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+          "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+        },
+        "change_id": "B",
+        "incorporated": {
+          "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+          "tip": "933e62a007da8cc6131e683774a34bddf644af55"
+        },
+        "integrated": "3a54aac3211e5c3a68ebd2c13567c68ae6a74a10",
+        "normalized_I": "1b6268ad9ace060f73689a0d18966e1bbcfadbca",
+        "normalized_L": "408bff62fe927676d20792194e717690f4903514"
+      }
+    ],
+    "hosted_B": {
+      "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+      "tip": "933e62a007da8cc6131e683774a34bddf644af55"
+    },
+    "hosted_trunk": "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+  },
+  "first_landing": {
+    "details": {
+      "message": "Pull request was merged.",
+      "sha": "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+    },
+    "status": "merged"
+  },
+  "groups": {
+    "original": 64,
+    "rebuilt": 89
+  },
+  "later_local": {
+    "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+    "tip": "245b688d46bf3b054b177321286fa1bf819eab60"
+  },
+  "prefix": "exp/integration/repeat-01",
+  "prs": {
+    "A": {
+      "head": "exp/integration/repeat-01/A",
+      "node_id": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "number": 62
+    },
+    "B": {
+      "head": "exp/integration/repeat-01/B",
+      "node_id": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "number": 63
+    },
+    "F": {
+      "head": "exp/integration/repeat-01/F",
+      "node_id": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "number": 88
+    }
+  },
+  "repository": "joshlf/gherrit-native-stack-experiments-2026-11-08",
+  "second_import": {
+    "hosted": {
+      "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+      "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+    },
+    "native_handoff_limit": "Two finite agreeing samples and successful later writes are observations, not provider settlement proof.",
+    "no_op_decision": "Accept exact confirmed hosted range; no remote write or new authored archive needed",
+    "no_pending": [
+      {
+        "accepted_local": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "b4d1bde9ca27f551ab5a818ada4b5bcf13c52509"
+        },
+        "change_id": "B",
+        "incorporated": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+        },
+        "integrated": "0cd5dd2d062f36eee28c096e80009a420f85d7ca",
+        "normalized_I": "63ee026295ffd6463f143a9211aa258f0814517f",
+        "normalized_L": "7bd69f31a23e0ead0fe16fb6a72b00d94e6bcf82"
+      }
+    ],
+    "with_pending": [
+      {
+        "accepted_local": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "bbbf83f031ddcc3868ec14426e78f1ed218fd72a"
+        },
+        "change_id": "B",
+        "incorporated": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+        },
+        "integrated": "e5bdf8d374a757fb376619b70e6020078a835c33",
+        "normalized_I": "0d5381ea46a01b0fd06f34f3e1637a17bdddc46b",
+        "normalized_L": "9911b348127cfe7b4314372c1e35e1033fac3df6"
+      }
+    ]
+  },
+  "second_landing": {
+    "details": {
+      "message": "Pull request was merged.",
+      "sha": "ce8d49b86294b945d860f53d634483fdb3f7274c"
+    },
+    "status": "merged"
+  },
+  "seed": "ed86001d0772bad37723d34c42172793a1065def",
+  "source_ranges": {
+    "A": {
+      "incorporated": {
+        "base": "714662ab71f9999c9399fc641c370a08e050ece9",
+        "tip": "84ff590243f50d703c26712bf28a986b412bfd66"
+      },
+      "local": {
+        "base": "714662ab71f9999c9399fc641c370a08e050ece9",
+        "tip": "257892e30c895fb5a56d1a237cc46ae8fc9853dd"
+      }
+    },
+    "B": {
+      "incorporated": {
+        "base": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "tip": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0"
+      },
+      "local": {
+        "base": "257892e30c895fb5a56d1a237cc46ae8fc9853dd",
+        "tip": "70aa6d442ac1c37c704c9b98c2986a0f786e69fc"
+      }
+    }
+  },
+  "stages": {
+    "first-import": "stopped",
+    "publish-rebuilt": "complete",
+    "resume-first-import": "complete",
+    "second-import": "complete",
+    "setup": "complete"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "harness_checks": 122,
+  "additional_probe": "passed: matching desired head with another operation receipt remains unknown; no resend",
+  "final_run": "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/local-git/runs/20261108T175427-1794178467639760000",
+  "harness_sha256": "548714fe2959e48dfd61286683a4773405affc23b2591e2a48637c5c76ebb7e3",
+  "report": "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/local-git/RESULTS.md",
+  "machine_results": "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/local-git/runs/20261108T175427-1794178467639760000/results.json",
+  "artifact_verification": "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/local-git/runs/20261108T175427-1794178467639760000/artifact-verification.json",
+  "resolved_locally": [
+    "I/L/H normalization and ordered replay retained amendments in repeated and shared-file cases",
+    "captured export versus later local edit remains distinct",
+    "squash-landed A continuation can preserve F-before-canonical-B dependency",
+    "fresh continuation acceptance preserved source ref, index, and worktree; absence guard rejected collision",
+    "real SIGKILL ref/checkpoint gaps and unknown-not-resend transfer policy exercised"
+  ],
+  "negative_controls": [
+    "old submitted baseline manufactures second-import conflict",
+    "accepted-local hosted baseline drops pending y",
+    "omitting replay resets lower amendment inside upper patch",
+    "whole live source checkpoint hides later pending edit",
+    "source reset displaces staged and dirty tracked work",
+    "bindings-only transfer lacks checkpoint and pending evidence",
+    "matching desired head with unattributed receipt does not settle old operation"
+  ],
+  "remaining": [
+    "deployed GHerrit integration and mapping/author workflow",
+    "signing and broader Git history domain",
+    "power-loss and multi-writer fencing",
+    "provider handoff and structural lifecycle guarantees"
+  ],
+  "hosted_writes": false,
+  "gherrit_source_or_cargo_builds_changed": false
+}

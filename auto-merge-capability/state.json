@@ -1,0 +1,237 @@
+{
+  "seed": "b031070c2fd06ad94ce5b31f7f04fe5eb24c36f8",
+  "heads": {
+    "lower": {
+      "ref": "exp/auto/lower",
+      "sha": "3655a4d15df12824ea58e5b02dce361f2b73bd51"
+    },
+    "upper": {
+      "ref": "exp/auto/upper",
+      "sha": "00f7d538eccffeeec78d5ffd8ce8389c2e86796f"
+    }
+  },
+  "prs": {
+    "lower": {
+      "number": 80,
+      "node_id": "PR_kwDOVnhIZ88AAAABNujmlQ"
+    },
+    "upper": {
+      "number": 81,
+      "node_id": "PR_kwDOVnhIZ88AAAABNujnMQ"
+    }
+  },
+  "held_targets": [
+    "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+    "00f7d538eccffeeec78d5ffd8ce8389c2e86796f",
+    "13e368ecaa3ddf40b0dedd3c77ce2194c20245f3"
+  ],
+  "protection_endpoint": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/branches/exp%2Fauto%2Ftrunk/protection",
+  "stack": {
+    "id": 3221054,
+    "number": 82,
+    "node_id": "PRS_kwDOVnhIZ84AMSY-",
+    "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks/82",
+    "base": {
+      "ref": "exp/auto/trunk"
+    },
+    "open": true,
+    "created_at": "2026-11-08T23:23:31Z",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/80",
+        "id": 5216200341,
+        "number": 80,
+        "head": {
+          "ref": "exp/auto/lower",
+          "sha": "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "base": {
+          "ref": "exp/auto/trunk",
+          "sha": "b031070c2fd06ad94ce5b31f7f04fe5eb24c36f8",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "node_id": "PR_kwDOVnhIZ88AAAABNujmlQ",
+        "title": "Auto-merge experiment lower",
+        "state": "open",
+        "merged_at": null,
+        "draft": false,
+        "html_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/80",
+        "user": {
+          "login": "joshlf",
+          "id": 1046063,
+          "node_id": "MDQ6VXNlcjEwNDYwNjM=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1046063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/joshlf",
+          "html_url": "https://github.com/joshlf",
+          "followers_url": "https://api.github.com/users/joshlf/followers",
+          "following_url": "https://api.github.com/users/joshlf/following{/other_user}",
+          "gists_url": "https://api.github.com/users/joshlf/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/joshlf/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/joshlf/subscriptions",
+          "organizations_url": "https://api.github.com/users/joshlf/orgs",
+          "repos_url": "https://api.github.com/users/joshlf/repos",
+          "events_url": "https://api.github.com/users/joshlf/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/joshlf/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/81",
+        "id": 5216200497,
+        "number": 81,
+        "head": {
+          "ref": "exp/auto/upper",
+          "sha": "00f7d538eccffeeec78d5ffd8ce8389c2e86796f",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "base": {
+          "ref": "exp/auto/lower",
+          "sha": "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "node_id": "PR_kwDOVnhIZ88AAAABNujnMQ",
+        "title": "Auto-merge experiment upper",
+        "state": "open",
+        "merged_at": null,
+        "draft": false,
+        "html_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/81",
+        "user": {
+          "login": "joshlf",
+          "id": 1046063,
+          "node_id": "MDQ6VXNlcjEwNDYwNjM=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1046063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/joshlf",
+          "html_url": "https://github.com/joshlf",
+          "followers_url": "https://api.github.com/users/joshlf/followers",
+          "following_url": "https://api.github.com/users/joshlf/following{/other_user}",
+          "gists_url": "https://api.github.com/users/joshlf/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/joshlf/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/joshlf/subscriptions",
+          "organizations_url": "https://api.github.com/users/joshlf/orgs",
+          "repos_url": "https://api.github.com/users/joshlf/repos",
+          "events_url": "https://api.github.com/users/joshlf/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/joshlf/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      }
+    ]
+  },
+  "enable_response": {
+    "data": {
+      "enablePullRequestAutoMerge": null
+    },
+    "errors": [
+      {
+        "type": "UNPROCESSABLE",
+        "path": [
+          "enablePullRequestAutoMerge"
+        ],
+        "locations": [
+          {
+            "line": 1,
+            "column": 53
+          }
+        ],
+        "message": "Auto-merge is not supported for stacked pull requests."
+      }
+    ]
+  },
+  "enable_exit": 1,
+  "after_arm_graph": {
+    "lower": {
+      "id": "PR_kwDOVnhIZ88AAAABNujmlQ",
+      "number": 80,
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "headRefOid": "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+      "baseRefName": "exp/auto/trunk",
+      "baseRefOid": "b031070c2fd06ad94ce5b31f7f04fe5eb24c36f8",
+      "mergeStateStatus": "BLOCKED",
+      "viewerCanEnableAutoMerge": true,
+      "viewerCanDisableAutoMerge": false,
+      "isInMergeQueue": false,
+      "isMergeQueueEnabled": false,
+      "autoMergeRequest": null,
+      "mergeQueueEntry": null
+    },
+    "upper": {
+      "id": "PR_kwDOVnhIZ88AAAABNujnMQ",
+      "number": 81,
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "headRefOid": "00f7d538eccffeeec78d5ffd8ce8389c2e86796f",
+      "baseRefName": "exp/auto/lower",
+      "baseRefOid": "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+      "mergeStateStatus": "BLOCKED",
+      "viewerCanEnableAutoMerge": true,
+      "viewerCanDisableAutoMerge": false,
+      "isInMergeQueue": false,
+      "isMergeQueueEnabled": false,
+      "autoMergeRequest": null,
+      "mergeQueueEntry": null
+    }
+  },
+  "outcome": "rejected or no armed request; exact response retained",
+  "cleanup_graph": {
+    "lower": {
+      "id": "PR_kwDOVnhIZ88AAAABNujmlQ",
+      "number": 80,
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "headRefOid": "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+      "baseRefName": "exp/auto/trunk",
+      "baseRefOid": "b031070c2fd06ad94ce5b31f7f04fe5eb24c36f8",
+      "mergeStateStatus": "BLOCKED",
+      "viewerCanEnableAutoMerge": true,
+      "viewerCanDisableAutoMerge": false,
+      "isInMergeQueue": false,
+      "isMergeQueueEnabled": false,
+      "autoMergeRequest": null,
+      "mergeQueueEntry": null
+    },
+    "upper": {
+      "id": "PR_kwDOVnhIZ88AAAABNujnMQ",
+      "number": 81,
+      "state": "OPEN",
+      "merged": false,
+      "mergedAt": null,
+      "headRefOid": "00f7d538eccffeeec78d5ffd8ce8389c2e86796f",
+      "baseRefName": "exp/auto/lower",
+      "baseRefOid": "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+      "mergeStateStatus": "BLOCKED",
+      "viewerCanEnableAutoMerge": true,
+      "viewerCanDisableAutoMerge": false,
+      "isInMergeQueue": false,
+      "isMergeQueueEnabled": false,
+      "autoMergeRequest": null,
+      "mergeQueueEntry": null
+    }
+  },
+  "unlanded_armed_after_cleanup": []
+}

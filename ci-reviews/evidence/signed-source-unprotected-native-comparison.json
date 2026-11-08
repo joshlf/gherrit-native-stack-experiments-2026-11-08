@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-08T23:33:33.990874+00:00",
+  "before_label": "before-prefix",
+  "after_label": "after-prefix",
+  "old_upper": "7c586aee5324ed0aed0a97c310fdab00e025b27c",
+  "new_upper": "4dfc140b7876f2583b05e7ff545756772099e342",
+  "old_parent": "7ca2b1a7a38f3b3f6f1325c121bb11b025a1c786",
+  "new_parent": "349a7ed53b228caec8d31c8aecd8204a9ef8d658",
+  "patch_bytes_equal": true,
+  "tree_equal": true,
+  "author_equal": true,
+  "message_equal": true,
+  "old_verified": true,
+  "new_verified": true,
+  "new_verification_reason": "valid",
+  "new_committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-11-08T23:33:17Z"
+  }
+}

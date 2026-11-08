@@ -1,0 +1,21 @@
+{
+  "repository": "joshlf/gherrit-native-stack-experiments-2026-11-08",
+  "owner_type": "User",
+  "public": true,
+  "trunk": "refs/heads/exp/queue/trunk",
+  "seed": "b031070c2fd06ad94ce5b31f7f04fe5eb24c36f8",
+  "ruleset_request_name": "queue-capability-2026-11-08",
+  "ruleset_command_exit": 1,
+  "ruleset_response": {
+    "message": "Validation Failed",
+    "errors": [
+      "Invalid rule 'merge_queue': "
+    ],
+    "documentation_url": "https://docs.github.com/rest/repos/rules#create-a-repository-ruleset",
+    "status": "422"
+  },
+  "matching_rulesets_after": [],
+  "next_step": "stopped: merge-queue rule rejected on this personal repository; queued/group/ejection behavior untested",
+  "no_global_options_changed": true,
+  "classification": "observed queue-rule rejection; primary docs independently exclude public personal repositories; response itself does not identify plan as cause"
+}

@@ -1,0 +1,377 @@
+[
+  {
+    "run_id": "42532184785",
+    "workflow": "observe",
+    "event": "pull_request",
+    "action": "opened",
+    "pr": 5,
+    "event_base": "exp/ci/initial/trunk",
+    "event_head_sha": "997f486e9ce884ef20100499d56905d0c495f545",
+    "stack": null,
+    "context_base": "exp/ci/initial/trunk",
+    "ref": "refs/pull/5/merge",
+    "sha": "f3a323e33770969b9ad2ef6a4970f8f8beb5b518",
+    "tree": "8dee46b6e171ea507373c3d834f275cb41950aea",
+    "parents": [
+      "ed86001d0772bad37723d34c42172793a1065def",
+      "997f486e9ce884ef20100499d56905d0c495f545"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532184785/event-observe-42532184785-1/event.json"
+  },
+  {
+    "run_id": "42532184854",
+    "workflow": "trunk-filter",
+    "event": "pull_request",
+    "action": "opened",
+    "pr": 5,
+    "event_base": "exp/ci/initial/trunk",
+    "event_head_sha": "997f486e9ce884ef20100499d56905d0c495f545",
+    "stack": null,
+    "context_base": "exp/ci/initial/trunk",
+    "ref": "refs/pull/5/merge",
+    "sha": "f3a323e33770969b9ad2ef6a4970f8f8beb5b518",
+    "tree": "8dee46b6e171ea507373c3d834f275cb41950aea",
+    "parents": [
+      "ed86001d0772bad37723d34c42172793a1065def",
+      "997f486e9ce884ef20100499d56905d0c495f545"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532184854/event-trunk-filter-42532184854-1/event.json"
+  },
+  {
+    "run_id": "42532186559",
+    "workflow": "observe",
+    "event": "pull_request",
+    "action": "opened",
+    "pr": 6,
+    "event_base": "exp/ci/initial/lower",
+    "event_head_sha": "ae2f8017a6660746fb96e7d58f49b39f3dff473d",
+    "stack": null,
+    "context_base": "exp/ci/initial/lower",
+    "ref": "refs/pull/6/merge",
+    "sha": "dc881e77522e5962da410de736994951f041d06e",
+    "tree": "0c7e90261f0e9be69a542156393ff07044753679",
+    "parents": [
+      "997f486e9ce884ef20100499d56905d0c495f545",
+      "ae2f8017a6660746fb96e7d58f49b39f3dff473d"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532186559/event-observe-42532186559-1/event.json"
+  },
+  {
+    "run_id": "42532221687",
+    "workflow": "stacked-only",
+    "event": "pull_request",
+    "action": "stacked",
+    "pr": 5,
+    "event_base": "exp/ci/initial/trunk",
+    "event_head_sha": "997f486e9ce884ef20100499d56905d0c495f545",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/initial/trunk",
+        "sha": "ed86001d0772bad37723d34c42172793a1065def"
+      },
+      "id": 3220532,
+      "number": 9,
+      "position": 1,
+      "size": 2
+    },
+    "context_base": "exp/ci/initial/trunk",
+    "ref": "refs/pull/5/merge",
+    "sha": "f3a323e33770969b9ad2ef6a4970f8f8beb5b518",
+    "tree": "8dee46b6e171ea507373c3d834f275cb41950aea",
+    "parents": [
+      "ed86001d0772bad37723d34c42172793a1065def",
+      "997f486e9ce884ef20100499d56905d0c495f545"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532221687/event-stacked-only-42532221687-1/event.json"
+  },
+  {
+    "run_id": "42532221810",
+    "workflow": "stacked-only",
+    "event": "pull_request",
+    "action": "stacked",
+    "pr": 6,
+    "event_base": "exp/ci/initial/lower",
+    "event_head_sha": "ae2f8017a6660746fb96e7d58f49b39f3dff473d",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/initial/trunk",
+        "sha": "ed86001d0772bad37723d34c42172793a1065def"
+      },
+      "id": 3220532,
+      "number": 9,
+      "position": 2,
+      "size": 2
+    },
+    "context_base": "exp/ci/initial/trunk",
+    "ref": "refs/pull/6/merge",
+    "sha": "dc881e77522e5962da410de736994951f041d06e",
+    "tree": "0c7e90261f0e9be69a542156393ff07044753679",
+    "parents": [
+      "997f486e9ce884ef20100499d56905d0c495f545",
+      "ae2f8017a6660746fb96e7d58f49b39f3dff473d"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532221810/event-stacked-only-42532221810-1/event.json"
+  },
+  {
+    "run_id": "42532273639",
+    "workflow": "trunk-filter",
+    "event": "workflow_dispatch",
+    "action": null,
+    "pr": null,
+    "event_base": null,
+    "event_head_sha": null,
+    "stack": null,
+    "context_base": "",
+    "ref": "refs/heads/exp/ci/initial/upper",
+    "sha": "ae2f8017a6660746fb96e7d58f49b39f3dff473d",
+    "tree": "0c7e90261f0e9be69a542156393ff07044753679",
+    "parents": [
+      "997f486e9ce884ef20100499d56905d0c495f545"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532273639/event-trunk-filter-42532273639-1/event.json"
+  },
+  {
+    "run_id": "42532354077",
+    "workflow": "trunk-filter",
+    "event": "pull_request",
+    "action": "synchronize",
+    "pr": 6,
+    "event_base": "exp/ci/initial/lower",
+    "event_head_sha": "59b8824c75ddeb4282baecbf21d225d8a0cde82f",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/initial/trunk",
+        "sha": "ed86001d0772bad37723d34c42172793a1065def"
+      },
+      "id": 3220532,
+      "number": 9,
+      "position": 2,
+      "size": 2
+    },
+    "context_base": "exp/ci/initial/trunk",
+    "ref": "refs/pull/6/merge",
+    "sha": "e8c26972deb4143b501450bd343136357091aeac",
+    "tree": "0c7e90261f0e9be69a542156393ff07044753679",
+    "parents": [
+      "f3a323e33770969b9ad2ef6a4970f8f8beb5b518",
+      "59b8824c75ddeb4282baecbf21d225d8a0cde82f"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532354077/event-trunk-filter-42532354077-1/event.json"
+  },
+  {
+    "run_id": "42532354102",
+    "workflow": "observe",
+    "event": "pull_request",
+    "action": "synchronize",
+    "pr": 6,
+    "event_base": "exp/ci/initial/lower",
+    "event_head_sha": "59b8824c75ddeb4282baecbf21d225d8a0cde82f",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/initial/trunk",
+        "sha": "ed86001d0772bad37723d34c42172793a1065def"
+      },
+      "id": 3220532,
+      "number": 9,
+      "position": 2,
+      "size": 2
+    },
+    "context_base": "exp/ci/initial/trunk",
+    "ref": "refs/pull/6/merge",
+    "sha": "e8c26972deb4143b501450bd343136357091aeac",
+    "tree": "0c7e90261f0e9be69a542156393ff07044753679",
+    "parents": [
+      "f3a323e33770969b9ad2ef6a4970f8f8beb5b518",
+      "59b8824c75ddeb4282baecbf21d225d8a0cde82f"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532354102/event-observe-42532354102-1/event.json"
+  },
+  {
+    "run_id": "42532416859",
+    "workflow": "trunk-filter",
+    "event": "pull_request",
+    "action": "opened",
+    "pr": 11,
+    "event_base": "exp/ci/adoption/trunk",
+    "event_head_sha": "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+    "stack": null,
+    "context_base": "exp/ci/adoption/trunk",
+    "ref": "refs/pull/11/merge",
+    "sha": "8e0d7061d15c8c032ae2a576d1d0519c7915a708",
+    "tree": "e251c45864cbfd4baf8c5c15f44d50d9a0766118",
+    "parents": [
+      "e67444e5247309469fe75b1936218eb276a33b29",
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532416859/event-trunk-filter-42532416859-1/event.json"
+  },
+  {
+    "run_id": "42532416916",
+    "workflow": "observe",
+    "event": "pull_request",
+    "action": "opened",
+    "pr": 11,
+    "event_base": "exp/ci/adoption/trunk",
+    "event_head_sha": "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+    "stack": null,
+    "context_base": "exp/ci/adoption/trunk",
+    "ref": "refs/pull/11/merge",
+    "sha": "8e0d7061d15c8c032ae2a576d1d0519c7915a708",
+    "tree": "e251c45864cbfd4baf8c5c15f44d50d9a0766118",
+    "parents": [
+      "e67444e5247309469fe75b1936218eb276a33b29",
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532416916/event-observe-42532416916-1/event.json"
+  },
+  {
+    "run_id": "42532417140",
+    "workflow": "stacked-trunk",
+    "event": "pull_request",
+    "action": "opened",
+    "pr": 11,
+    "event_base": "exp/ci/adoption/trunk",
+    "event_head_sha": "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+    "stack": null,
+    "context_base": "exp/ci/adoption/trunk",
+    "ref": "refs/pull/11/merge",
+    "sha": "8e0d7061d15c8c032ae2a576d1d0519c7915a708",
+    "tree": "e251c45864cbfd4baf8c5c15f44d50d9a0766118",
+    "parents": [
+      "e67444e5247309469fe75b1936218eb276a33b29",
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532417140/event-stacked-trunk-42532417140-1/event.json"
+  },
+  {
+    "run_id": "42532418936",
+    "workflow": "observe",
+    "event": "pull_request",
+    "action": "opened",
+    "pr": 12,
+    "event_base": "exp/ci/adoption/lower",
+    "event_head_sha": "7ba2c40fe6508b0cf4fa656a0d2abf4ccedb1f44",
+    "stack": null,
+    "context_base": "exp/ci/adoption/lower",
+    "ref": "refs/pull/12/merge",
+    "sha": "0d9754604a7bd854ffe196da63c7e7b387d5a8af",
+    "tree": "580a956235b7e6eede22faa000fcb86f5c38d7ee",
+    "parents": [
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+      "7ba2c40fe6508b0cf4fa656a0d2abf4ccedb1f44"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532418936/event-observe-42532418936-1/event.json"
+  },
+  {
+    "run_id": "42532453950",
+    "workflow": "stacked-trunk",
+    "event": "pull_request",
+    "action": "stacked",
+    "pr": 11,
+    "event_base": "exp/ci/adoption/trunk",
+    "event_head_sha": "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/adoption/trunk",
+        "sha": "e67444e5247309469fe75b1936218eb276a33b29"
+      },
+      "id": 3220580,
+      "number": 13,
+      "position": 1,
+      "size": 2
+    },
+    "context_base": "exp/ci/adoption/trunk",
+    "ref": "refs/pull/11/merge",
+    "sha": "8e0d7061d15c8c032ae2a576d1d0519c7915a708",
+    "tree": "e251c45864cbfd4baf8c5c15f44d50d9a0766118",
+    "parents": [
+      "e67444e5247309469fe75b1936218eb276a33b29",
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532453950/event-stacked-trunk-42532453950-1/event.json"
+  },
+  {
+    "run_id": "42532453962",
+    "workflow": "stacked-only",
+    "event": "pull_request",
+    "action": "stacked",
+    "pr": 11,
+    "event_base": "exp/ci/adoption/trunk",
+    "event_head_sha": "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/adoption/trunk",
+        "sha": "e67444e5247309469fe75b1936218eb276a33b29"
+      },
+      "id": 3220580,
+      "number": 13,
+      "position": 1,
+      "size": 2
+    },
+    "context_base": "exp/ci/adoption/trunk",
+    "ref": "refs/pull/11/merge",
+    "sha": "8e0d7061d15c8c032ae2a576d1d0519c7915a708",
+    "tree": "e251c45864cbfd4baf8c5c15f44d50d9a0766118",
+    "parents": [
+      "e67444e5247309469fe75b1936218eb276a33b29",
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532453962/event-stacked-only-42532453962-1/event.json"
+  },
+  {
+    "run_id": "42532454006",
+    "workflow": "stacked-trunk",
+    "event": "pull_request",
+    "action": "stacked",
+    "pr": 12,
+    "event_base": "exp/ci/adoption/lower",
+    "event_head_sha": "7ba2c40fe6508b0cf4fa656a0d2abf4ccedb1f44",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/adoption/trunk",
+        "sha": "e67444e5247309469fe75b1936218eb276a33b29"
+      },
+      "id": 3220580,
+      "number": 13,
+      "position": 2,
+      "size": 2
+    },
+    "context_base": "exp/ci/adoption/trunk",
+    "ref": "refs/pull/12/merge",
+    "sha": "0d9754604a7bd854ffe196da63c7e7b387d5a8af",
+    "tree": "580a956235b7e6eede22faa000fcb86f5c38d7ee",
+    "parents": [
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+      "7ba2c40fe6508b0cf4fa656a0d2abf4ccedb1f44"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532454006/event-stacked-trunk-42532454006-1/event.json"
+  },
+  {
+    "run_id": "42532454035",
+    "workflow": "stacked-only",
+    "event": "pull_request",
+    "action": "stacked",
+    "pr": 12,
+    "event_base": "exp/ci/adoption/lower",
+    "event_head_sha": "7ba2c40fe6508b0cf4fa656a0d2abf4ccedb1f44",
+    "stack": {
+      "base": {
+        "ref": "exp/ci/adoption/trunk",
+        "sha": "e67444e5247309469fe75b1936218eb276a33b29"
+      },
+      "id": 3220580,
+      "number": 13,
+      "position": 2,
+      "size": 2
+    },
+    "context_base": "exp/ci/adoption/trunk",
+    "ref": "refs/pull/12/merge",
+    "sha": "0d9754604a7bd854ffe196da63c7e7b387d5a8af",
+    "tree": "580a956235b7e6eede22faa000fcb86f5c38d7ee",
+    "parents": [
+      "c61a9e147aabde79f9e36c38649d98a8844aaf00",
+      "7ba2c40fe6508b0cf4fa656a0d2abf4ccedb1f44"
+    ],
+    "path": "experiments/native-stacks-2026-11-08/ci-reviews/evidence/actions/42532454035/event-stacked-only-42532454035-1/event.json"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "effective_rules": [],
+  "old_sha": "7c586aee5324ed0aed0a97c310fdab00e025b27c",
+  "new_sha": "4dfc140b7876f2583b05e7ff545756772099e342",
+  "both_verified": true,
+  "signature_bytes_equal": false,
+  "signed_payload_equal": false,
+  "old_verified_at": "2026-11-08T23:03:42Z",
+  "new_verified_at": "2026-11-08T23:33:28Z"
+}

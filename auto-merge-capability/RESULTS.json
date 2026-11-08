@@ -1,0 +1,27 @@
+{
+  "native_auto_merge_outcome": "explicitly rejected as unsupported for stacked pull requests",
+  "prs": [
+    80,
+    81
+  ],
+  "stack": 82,
+  "selected_pr": 80,
+  "required_status_context": "exp-auto-held",
+  "both_members_blocked_before_request": true,
+  "graphql_viewerCanEnableAutoMerge_reported": true,
+  "mutation_rejected_despite_viewer_boolean": true,
+  "repo_flag_original": false,
+  "repo_flag_temporarily_enabled": true,
+  "repo_flag_restored_value": false,
+  "restoration_verified": true,
+  "armed_requests_after_cleanup": [],
+  "refs_unchanged_by_arm_attempt": true,
+  "status_release_not_run": true,
+  "landing_or_queue_behavior": "untested because request rejected",
+  "all_dispatched_effects_have_recorded_subprocess_responses": true,
+  "refs": {
+    "refs/heads/exp/auto/lower": "3655a4d15df12824ea58e5b02dce361f2b73bd51",
+    "refs/heads/exp/auto/trunk": "b031070c2fd06ad94ce5b31f7f04fe5eb24c36f8",
+    "refs/heads/exp/auto/upper": "00f7d538eccffeeec78d5ffd8ce8389c2e86796f"
+  }
+}

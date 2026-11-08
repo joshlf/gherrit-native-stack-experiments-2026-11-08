@@ -1,0 +1,307 @@
+{
+  "status": "completed_bounded_trace_with_preserved_failed_observations",
+  "checks_total": 137,
+  "checks_passed": 135,
+  "retained_failed_checks": [
+    {
+      "actual": "933e62a007da8cc6131e683774a34bddf644af55",
+      "at": "2026-11-08T23:21:40.049230+00:00",
+      "expected": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+      "label": "old-A-landed-first B head matches ref",
+      "passed": false
+    },
+    {
+      "actual": 200,
+      "at": "2026-11-08T23:23:25.574778+00:00",
+      "expected": 204,
+      "label": "release original eligible members",
+      "passed": false
+    }
+  ],
+  "prs": {
+    "A": {
+      "head": "exp/integration/repeat-01/A",
+      "node_id": "PR_kwDOVnhIZ88AAAABNuiY3Q",
+      "number": 62
+    },
+    "B": {
+      "head": "exp/integration/repeat-01/B",
+      "node_id": "PR_kwDOVnhIZ88AAAABNuiaBw",
+      "number": 63
+    },
+    "F": {
+      "head": "exp/integration/repeat-01/F",
+      "node_id": "PR_kwDOVnhIZ88AAAABNukH7w",
+      "number": 88
+    }
+  },
+  "groups": {
+    "original": 64,
+    "rebuilt": 89
+  },
+  "repository": "joshlf/gherrit-native-stack-experiments-2026-11-08",
+  "prefix": "exp/integration/repeat-01",
+  "source_ranges": {
+    "A": {
+      "incorporated": {
+        "base": "714662ab71f9999c9399fc641c370a08e050ece9",
+        "tip": "84ff590243f50d703c26712bf28a986b412bfd66"
+      },
+      "local": {
+        "base": "714662ab71f9999c9399fc641c370a08e050ece9",
+        "tip": "257892e30c895fb5a56d1a237cc46ae8fc9853dd"
+      }
+    },
+    "B": {
+      "incorporated": {
+        "base": "84ff590243f50d703c26712bf28a986b412bfd66",
+        "tip": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0"
+      },
+      "local": {
+        "base": "257892e30c895fb5a56d1a237cc46ae8fc9853dd",
+        "tip": "70aa6d442ac1c37c704c9b98c2986a0f786e69fc"
+      }
+    }
+  },
+  "first_import": {
+    "B": {
+      "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+      "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+    },
+    "F": {
+      "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+      "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+    },
+    "algorithm": [
+      {
+        "accepted_local": {
+          "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+          "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+        },
+        "change_id": "B",
+        "incorporated": {
+          "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+          "tip": "933e62a007da8cc6131e683774a34bddf644af55"
+        },
+        "integrated": "3a54aac3211e5c3a68ebd2c13567c68ae6a74a10",
+        "normalized_I": "1b6268ad9ace060f73689a0d18966e1bbcfadbca",
+        "normalized_L": "408bff62fe927676d20792194e717690f4903514"
+      }
+    ],
+    "hosted_B": {
+      "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+      "tip": "933e62a007da8cc6131e683774a34bddf644af55"
+    },
+    "hosted_trunk": "9764253d75c6ed4bfda1ebe562618fa6644a49d5"
+  },
+  "later_local": {
+    "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+    "tip": "245b688d46bf3b054b177321286fa1bf819eab60"
+  },
+  "checkpoint": {
+    "accepted_local": {
+      "B": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "F": {
+        "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+        "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      }
+    },
+    "authored": {
+      "B": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "F": {
+        "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+        "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      }
+    },
+    "confirmed_at": "2026-11-08T23:24:42.226673+00:00",
+    "incorporated": {
+      "B": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "F": {
+        "base": "9764253d75c6ed4bfda1ebe562618fa6644a49d5",
+        "tip": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+      }
+    },
+    "snapshot": "rebuilt-publication-confirmed"
+  },
+  "second_import": {
+    "hosted": {
+      "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+      "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+    },
+    "native_handoff_limit": "Two finite agreeing samples and successful later writes are observations, not provider settlement proof.",
+    "no_op_decision": "Accept exact confirmed hosted range; no remote write or new authored archive needed",
+    "no_pending": [
+      {
+        "accepted_local": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "b4d1bde9ca27f551ab5a818ada4b5bcf13c52509"
+        },
+        "change_id": "B",
+        "incorporated": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+        },
+        "integrated": "0cd5dd2d062f36eee28c096e80009a420f85d7ca",
+        "normalized_I": "63ee026295ffd6463f143a9211aa258f0814517f",
+        "normalized_L": "7bd69f31a23e0ead0fe16fb6a72b00d94e6bcf82"
+      }
+    ],
+    "with_pending": [
+      {
+        "accepted_local": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "bbbf83f031ddcc3868ec14426e78f1ed218fd72a"
+        },
+        "change_id": "B",
+        "incorporated": {
+          "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+          "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+        },
+        "integrated": "e5bdf8d374a757fb376619b70e6020078a835c33",
+        "normalized_I": "0d5381ea46a01b0fd06f34f3e1637a17bdddc46b",
+        "normalized_L": "9911b348127cfe7b4314372c1e35e1033fac3df6"
+      }
+    ]
+  },
+  "archives": {
+    "refs/tags/exp/integration/repeat-01/authored/A/v1": "84ff590243f50d703c26712bf28a986b412bfd66",
+    "refs/tags/exp/integration/repeat-01/authored/B/v1": "f15cb29aac3b8740374c2fa3c4239cdcd5ab58f0",
+    "refs/tags/exp/integration/repeat-01/authored/B/v2": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652",
+    "refs/tags/exp/integration/repeat-01/authored/F/v1": "b8d92c60ae731825b720f4dae01373b5b3bf24cc"
+  },
+  "hosted_API_writes": [
+    {
+      "label": "create-A",
+      "method": "POST",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls",
+      "http": 201,
+      "start": "2026-11-08T23:21:02.679782+00:00",
+      "end": "2026-11-08T23:21:03.913737+00:00"
+    },
+    {
+      "label": "create-B",
+      "method": "POST",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls",
+      "http": 201,
+      "start": "2026-11-08T23:21:04.927669+00:00",
+      "end": "2026-11-08T23:21:06.135498+00:00"
+    },
+    {
+      "label": "register-original",
+      "method": "POST",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks",
+      "http": 201,
+      "start": "2026-11-08T23:21:07.153828+00:00",
+      "end": "2026-11-08T23:21:07.855341+00:00"
+    },
+    {
+      "label": "land-old-A-request",
+      "method": "PUT",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/62/merge-async",
+      "http": 202,
+      "start": "2026-11-08T23:21:34.966222+00:00",
+      "end": "2026-11-08T23:21:35.314982+00:00"
+    },
+    {
+      "label": "release-original",
+      "method": "POST",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks/64/unstack",
+      "http": 200,
+      "start": "2026-11-08T23:23:24.142248+00:00",
+      "end": "2026-11-08T23:23:24.567385+00:00"
+    },
+    {
+      "label": "create-F",
+      "method": "POST",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls",
+      "http": 201,
+      "start": "2026-11-08T23:24:32.945577+00:00",
+      "end": "2026-11-08T23:24:34.024036+00:00"
+    },
+    {
+      "label": "final-base-canonical-B",
+      "method": "PATCH",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/63",
+      "http": 200,
+      "start": "2026-11-08T23:24:35.035813+00:00",
+      "end": "2026-11-08T23:24:35.832307+00:00"
+    },
+    {
+      "label": "register-rebuilt",
+      "method": "POST",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks",
+      "http": 201,
+      "start": "2026-11-08T23:24:38.376980+00:00",
+      "end": "2026-11-08T23:24:39.090654+00:00"
+    },
+    {
+      "label": "land-F-request",
+      "method": "PUT",
+      "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/88/merge-async",
+      "http": 202,
+      "start": "2026-11-08T23:25:19.113476+00:00",
+      "end": "2026-11-08T23:25:19.491064+00:00"
+    }
+  ],
+  "unstack_dispatch_count": 1,
+  "core_sha256": "548714fe2959e48dfd61286683a4773405affc23b2591e2a48637c5c76ebb7e3",
+  "final_runner_sha256": "b3ab835ae4afb6b4f9558c7b74f8b1354e8a90ff65dae92e998ea1a62af9c801",
+  "source_versions": [
+    "runner-v1.py",
+    "runner-v2.py",
+    "runner-v3.py"
+  ],
+  "limits": [
+    "No provider-settlement guarantee; resumption after coherent reads was an intentionally bounded disposable-repository experiment.",
+    "Parking was already satisfied by native B-to-trunk retargeting; no nontrivial parking PATCH was needed.",
+    "No-op is an experiment decision using exact hosted continuation, not deployed GHerrit behavior.",
+    "Two retained failed checks are not deleted or reclassified as passing: one actual inconsistent observation, one corrected 204-only status oracle."
+  ],
+  "report": "RESULTS.md",
+  "selected_continuations": {
+    "no-pending": {
+      "accepted_local": {
+        "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+        "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+      },
+      "at": "2026-11-08T23:25:32.065607+00:00",
+      "authored_submission": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "incorporated": {
+        "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+        "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+      },
+      "ref": "refs/heads/local-continuation-no-pending",
+      "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+    },
+    "with-pending": {
+      "accepted_local": {
+        "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+        "tip": "bbbf83f031ddcc3868ec14426e78f1ed218fd72a"
+      },
+      "at": "2026-11-08T23:25:32.076885+00:00",
+      "authored_submission": {
+        "base": "b8d92c60ae731825b720f4dae01373b5b3bf24cc",
+        "tip": "b49dfdbd8e207d6f3bd55d03996bb0c51877e652"
+      },
+      "incorporated": {
+        "base": "ce8d49b86294b945d860f53d634483fdb3f7274c",
+        "tip": "c2f671d686eec1642775752a2139a9d2e694dc17"
+      },
+      "ref": "refs/heads/local-continuation-with-pending",
+      "tip": "bbbf83f031ddcc3868ec14426e78f1ed218fd72a"
+    }
+  },
+  "artifact_verification": "evidence/artifact-verification.json"
+}

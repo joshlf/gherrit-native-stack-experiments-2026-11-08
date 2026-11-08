@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "actions/checkout",
+    "tag": "v4",
+    "commit": "11d5960a326750d5838078e36cf38b85af677262"
+  },
+  {
+    "repository": "actions/upload-artifact",
+    "tag": "v4",
+    "commit": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+  }
+]

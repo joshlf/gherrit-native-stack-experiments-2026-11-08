@@ -1,0 +1,1013 @@
+{
+  "review-nohint": {
+    "approved": {
+      "started": "2026-11-08T23:07:50.068532+00:00",
+      "finished": "2026-11-08T23:08:00.600577+00:00",
+      "lower": {
+        "number": 38,
+        "head": "336e605de8b7fe776b6ba7cc03c0ae38a31dd1d3",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103454,
+            "state": "APPROVED",
+            "commit_id": "336e605de8b7fe776b6ba7cc03c0ae38a31dd1d3",
+            "submitted_at": "2026-11-08T23:07:42Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230751020880Z-review-nohint-approved-lower-gh-pr.stdout",
+          "evidence/20261108T230752094935Z-review-nohint-approved-lower-reviews.stdout",
+          "evidence/20261108T230752858205Z-review-nohint-approved-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 39,
+        "head": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+        "base": "exp/ci/review-nohint/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103526,
+            "state": "APPROVED",
+            "commit_id": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+            "submitted_at": "2026-11-08T23:07:43Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230754745759Z-review-nohint-approved-upper-gh-pr.stdout",
+          "evidence/20261108T230755804468Z-review-nohint-approved-upper-reviews.stdout",
+          "evidence/20261108T230756682677Z-review-nohint-approved-upper-timeline.stdout"
+        ]
+      }
+    },
+    "trunk-advanced-before-rebase": {
+      "started": "2026-11-08T23:08:34.603134+00:00",
+      "finished": "2026-11-08T23:08:45.100564+00:00",
+      "lower": {
+        "number": 38,
+        "head": "336e605de8b7fe776b6ba7cc03c0ae38a31dd1d3",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103454,
+            "state": "APPROVED",
+            "commit_id": "336e605de8b7fe776b6ba7cc03c0ae38a31dd1d3",
+            "submitted_at": "2026-11-08T23:07:42Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230835837492Z-review-nohint-trunk-advanced-before-rebase-lower-gh-pr.stdout",
+          "evidence/20261108T230836883333Z-review-nohint-trunk-advanced-before-rebase-lower-reviews.stdout",
+          "evidence/20261108T230837580463Z-review-nohint-trunk-advanced-before-rebase-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 39,
+        "head": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+        "base": "exp/ci/review-nohint/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103526,
+            "state": "APPROVED",
+            "commit_id": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+            "submitted_at": "2026-11-08T23:07:43Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230839348492Z-review-nohint-trunk-advanced-before-rebase-upper-gh-pr.stdout",
+          "evidence/20261108T230840420155Z-review-nohint-trunk-advanced-before-rebase-upper-reviews.stdout",
+          "evidence/20261108T230841125814Z-review-nohint-trunk-advanced-before-rebase-upper-timeline.stdout"
+        ]
+      }
+    },
+    "rebased": {
+      "started": "2026-11-08T23:09:09.293815+00:00",
+      "finished": "2026-11-08T23:09:19.570492+00:00",
+      "lower": {
+        "number": 38,
+        "head": "54753a3e16e502e190ac0f230a7836dd7879103a",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103454,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:07:42Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230910333378Z-review-nohint-rebased-lower-gh-pr.stdout",
+          "evidence/20261108T230911525650Z-review-nohint-rebased-lower-reviews.stdout",
+          "evidence/20261108T230912301866Z-review-nohint-rebased-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 39,
+        "head": "4931b47cde0dac009d2951adaf7af338d5e23eb5",
+        "base": "exp/ci/review-nohint/lower",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103526,
+            "state": "DISMISSED",
+            "commit_id": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+            "submitted_at": "2026-11-08T23:07:43Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:08:47Z",
+            "state": "approved",
+            "review_id": 5820103526,
+            "dismissal_message": null,
+            "dismissal_commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5"
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T230914046966Z-review-nohint-rebased-upper-gh-pr.stdout",
+          "evidence/20261108T230915023995Z-review-nohint-rebased-upper-reviews.stdout",
+          "evidence/20261108T230915770601Z-review-nohint-rebased-upper-timeline.stdout"
+        ]
+      }
+    },
+    "later-after-rebase": {
+      "started": "2026-11-08T23:10:54.524679+00:00",
+      "finished": "2026-11-08T23:11:04.503901+00:00",
+      "lower": {
+        "number": 38,
+        "head": "54753a3e16e502e190ac0f230a7836dd7879103a",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103454,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:07:42Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231055519954Z-review-nohint-later-after-rebase-lower-gh-pr.stdout",
+          "evidence/20261108T231056513176Z-review-nohint-later-after-rebase-lower-reviews.stdout",
+          "evidence/20261108T231057228579Z-review-nohint-later-after-rebase-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 39,
+        "head": "4931b47cde0dac009d2951adaf7af338d5e23eb5",
+        "base": "exp/ci/review-nohint/lower",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103526,
+            "state": "DISMISSED",
+            "commit_id": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+            "submitted_at": "2026-11-08T23:07:43Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:08:47Z",
+            "state": "approved",
+            "review_id": 5820103526,
+            "dismissal_message": null,
+            "dismissal_commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5"
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231059179270Z-review-nohint-later-after-rebase-upper-gh-pr.stdout",
+          "evidence/20261108T231100154185Z-review-nohint-later-after-rebase-upper-reviews.stdout",
+          "evidence/20261108T231100934519Z-review-nohint-later-after-rebase-upper-timeline.stdout"
+        ]
+      }
+    },
+    "reapproved-before-prefix": {
+      "started": "2026-11-08T23:11:35.038851+00:00",
+      "finished": "2026-11-08T23:11:45.835770+00:00",
+      "lower": {
+        "number": 38,
+        "head": "54753a3e16e502e190ac0f230a7836dd7879103a",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103454,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:07:42Z"
+          },
+          {
+            "id": 5820117169,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:11:31Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231136534783Z-review-nohint-reapproved-before-prefix-lower-gh-pr.stdout",
+          "evidence/20261108T231137686416Z-review-nohint-reapproved-before-prefix-lower-reviews.stdout",
+          "evidence/20261108T231138332302Z-review-nohint-reapproved-before-prefix-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 39,
+        "head": "4931b47cde0dac009d2951adaf7af338d5e23eb5",
+        "base": "exp/ci/review-nohint/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103526,
+            "state": "DISMISSED",
+            "commit_id": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+            "submitted_at": "2026-11-08T23:07:43Z"
+          },
+          {
+            "id": 5820117259,
+            "state": "APPROVED",
+            "commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5",
+            "submitted_at": "2026-11-08T23:11:32Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:08:47Z",
+            "state": "approved",
+            "review_id": 5820103526,
+            "dismissal_message": null,
+            "dismissal_commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5"
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231139966118Z-review-nohint-reapproved-before-prefix-upper-gh-pr.stdout",
+          "evidence/20261108T231141133676Z-review-nohint-reapproved-before-prefix-upper-reviews.stdout",
+          "evidence/20261108T231142215950Z-review-nohint-reapproved-before-prefix-upper-timeline.stdout"
+        ]
+      }
+    },
+    "native-prefix": {
+      "started": "2026-11-08T23:12:29.541485+00:00",
+      "finished": "2026-11-08T23:12:40.276749+00:00",
+      "lower": {
+        "number": 38,
+        "head": "54753a3e16e502e190ac0f230a7836dd7879103a",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103454,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:07:42Z"
+          },
+          {
+            "id": 5820117169,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:11:31Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231230502072Z-review-nohint-native-prefix-lower-gh-pr.stdout",
+          "evidence/20261108T231231736164Z-review-nohint-native-prefix-lower-reviews.stdout",
+          "evidence/20261108T231232516708Z-review-nohint-native-prefix-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 39,
+        "head": "0b68062bbb3060e6232251370afecd8efea0d96b",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103526,
+            "state": "DISMISSED",
+            "commit_id": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+            "submitted_at": "2026-11-08T23:07:43Z"
+          },
+          {
+            "id": 5820117259,
+            "state": "DISMISSED",
+            "commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5",
+            "submitted_at": "2026-11-08T23:11:32Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:08:47Z",
+            "state": "approved",
+            "review_id": 5820103526,
+            "dismissal_message": null,
+            "dismissal_commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5"
+          },
+          {
+            "created_at": "2026-11-08T23:12:02Z",
+            "state": "approved",
+            "review_id": 5820117259,
+            "dismissal_message": "The merge-base changed after approval."
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231234273474Z-review-nohint-native-prefix-upper-gh-pr.stdout",
+          "evidence/20261108T231235463831Z-review-nohint-native-prefix-upper-reviews.stdout",
+          "evidence/20261108T231236258868Z-review-nohint-native-prefix-upper-timeline.stdout"
+        ]
+      }
+    },
+    "native-prefix-later": {
+      "started": "2026-11-08T23:13:20.790458+00:00",
+      "finished": "2026-11-08T23:13:31.251953+00:00",
+      "lower": {
+        "number": 38,
+        "head": "54753a3e16e502e190ac0f230a7836dd7879103a",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103454,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:07:42Z"
+          },
+          {
+            "id": 5820117169,
+            "state": "APPROVED",
+            "commit_id": "54753a3e16e502e190ac0f230a7836dd7879103a",
+            "submitted_at": "2026-11-08T23:11:31Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231321769439Z-review-nohint-native-prefix-later-lower-gh-pr.stdout",
+          "evidence/20261108T231322911138Z-review-nohint-native-prefix-later-lower-reviews.stdout",
+          "evidence/20261108T231323631441Z-review-nohint-native-prefix-later-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 39,
+        "head": "0b68062bbb3060e6232251370afecd8efea0d96b",
+        "base": "exp/ci/review-nohint/trunk",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103526,
+            "state": "DISMISSED",
+            "commit_id": "4a45e36ae4d54ec97f3a317319d7cd8a97da4774",
+            "submitted_at": "2026-11-08T23:07:43Z"
+          },
+          {
+            "id": 5820117259,
+            "state": "DISMISSED",
+            "commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5",
+            "submitted_at": "2026-11-08T23:11:32Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:08:47Z",
+            "state": "approved",
+            "review_id": 5820103526,
+            "dismissal_message": null,
+            "dismissal_commit_id": "4931b47cde0dac009d2951adaf7af338d5e23eb5"
+          },
+          {
+            "created_at": "2026-11-08T23:12:02Z",
+            "state": "approved",
+            "review_id": 5820117259,
+            "dismissal_message": "The merge-base changed after approval."
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231325356140Z-review-nohint-native-prefix-later-upper-gh-pr.stdout",
+          "evidence/20261108T231326508167Z-review-nohint-native-prefix-later-upper-reviews.stdout",
+          "evidence/20261108T231327229488Z-review-nohint-native-prefix-later-upper-timeline.stdout"
+        ]
+      }
+    }
+  },
+  "review-hint": {
+    "approved": {
+      "started": "2026-11-08T23:08:00.633797+00:00",
+      "finished": "2026-11-08T23:08:11.083905+00:00",
+      "lower": {
+        "number": 41,
+        "head": "a7677499a9d60aa3c6360a20d154e549932ae96f",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103617,
+            "state": "APPROVED",
+            "commit_id": "a7677499a9d60aa3c6360a20d154e549932ae96f",
+            "submitted_at": "2026-11-08T23:07:44Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230801546293Z-review-hint-approved-lower-gh-pr.stdout",
+          "evidence/20261108T230802586026Z-review-hint-approved-lower-reviews.stdout",
+          "evidence/20261108T230803339859Z-review-hint-approved-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 40,
+        "head": "02585c4f3346ba2c519e14761c91f40226917882",
+        "base": "exp/ci/review-hint/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103750,
+            "state": "APPROVED",
+            "commit_id": "02585c4f3346ba2c519e14761c91f40226917882",
+            "submitted_at": "2026-11-08T23:07:46Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230804887974Z-review-hint-approved-upper-gh-pr.stdout",
+          "evidence/20261108T230806110908Z-review-hint-approved-upper-reviews.stdout",
+          "evidence/20261108T230806888858Z-review-hint-approved-upper-timeline.stdout"
+        ]
+      }
+    },
+    "trunk-advanced-before-rebase": {
+      "started": "2026-11-08T23:08:47.837147+00:00",
+      "finished": "2026-11-08T23:08:57.774143+00:00",
+      "lower": {
+        "number": 41,
+        "head": "a7677499a9d60aa3c6360a20d154e549932ae96f",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103617,
+            "state": "APPROVED",
+            "commit_id": "a7677499a9d60aa3c6360a20d154e549932ae96f",
+            "submitted_at": "2026-11-08T23:07:44Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230848846461Z-review-hint-trunk-advanced-before-rebase-lower-gh-pr.stdout",
+          "evidence/20261108T230849926982Z-review-hint-trunk-advanced-before-rebase-lower-reviews.stdout",
+          "evidence/20261108T230850666575Z-review-hint-trunk-advanced-before-rebase-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 40,
+        "head": "02585c4f3346ba2c519e14761c91f40226917882",
+        "base": "exp/ci/review-hint/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103750,
+            "state": "APPROVED",
+            "commit_id": "02585c4f3346ba2c519e14761c91f40226917882",
+            "submitted_at": "2026-11-08T23:07:46Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230852470667Z-review-hint-trunk-advanced-before-rebase-upper-gh-pr.stdout",
+          "evidence/20261108T230853496826Z-review-hint-trunk-advanced-before-rebase-upper-reviews.stdout",
+          "evidence/20261108T230854264365Z-review-hint-trunk-advanced-before-rebase-upper-timeline.stdout"
+        ]
+      }
+    },
+    "rebased": {
+      "started": "2026-11-08T23:09:19.605453+00:00",
+      "finished": "2026-11-08T23:09:29.626188+00:00",
+      "lower": {
+        "number": 41,
+        "head": "c8186300224ce190ffcd8c7c592a21e142062395",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103617,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:07:44Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230920663157Z-review-hint-rebased-lower-gh-pr.stdout",
+          "evidence/20261108T230921695457Z-review-hint-rebased-lower-reviews.stdout",
+          "evidence/20261108T230922412228Z-review-hint-rebased-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 40,
+        "head": "0a30619d9cb79453e24d31250168ef64db0ca74c",
+        "base": "exp/ci/review-hint/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103750,
+            "state": "APPROVED",
+            "commit_id": "0a30619d9cb79453e24d31250168ef64db0ca74c",
+            "submitted_at": "2026-11-08T23:07:46Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230924213481Z-review-hint-rebased-upper-gh-pr.stdout",
+          "evidence/20261108T230925224056Z-review-hint-rebased-upper-reviews.stdout",
+          "evidence/20261108T230925930576Z-review-hint-rebased-upper-timeline.stdout"
+        ]
+      }
+    },
+    "substantive": {
+      "started": "2026-11-08T23:10:33.862769+00:00",
+      "finished": "2026-11-08T23:10:44.169459+00:00",
+      "lower": {
+        "number": 41,
+        "head": "c8186300224ce190ffcd8c7c592a21e142062395",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103617,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:07:44Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231034837662Z-review-hint-substantive-lower-gh-pr.stdout",
+          "evidence/20261108T231035910236Z-review-hint-substantive-lower-reviews.stdout",
+          "evidence/20261108T231036647308Z-review-hint-substantive-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 40,
+        "head": "69a8e028b2a7152666e4172087fec45c411e08e1",
+        "base": "exp/ci/review-hint/lower",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103750,
+            "state": "DISMISSED",
+            "commit_id": "0a30619d9cb79453e24d31250168ef64db0ca74c",
+            "submitted_at": "2026-11-08T23:07:46Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:10:24Z",
+            "state": "approved",
+            "review_id": 5820103750,
+            "dismissal_message": null,
+            "dismissal_commit_id": "69a8e028b2a7152666e4172087fec45c411e08e1"
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231038344061Z-review-hint-substantive-upper-gh-pr.stdout",
+          "evidence/20261108T231039485287Z-review-hint-substantive-upper-reviews.stdout",
+          "evidence/20261108T231040261569Z-review-hint-substantive-upper-timeline.stdout"
+        ]
+      }
+    },
+    "reapproved-before-prefix": {
+      "started": "2026-11-08T23:11:45.870165+00:00",
+      "finished": "2026-11-08T23:11:55.917068+00:00",
+      "lower": {
+        "number": 41,
+        "head": "c8186300224ce190ffcd8c7c592a21e142062395",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103617,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:07:44Z"
+          },
+          {
+            "id": 5820117332,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:11:33Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231146872464Z-review-hint-reapproved-before-prefix-lower-gh-pr.stdout",
+          "evidence/20261108T231147991236Z-review-hint-reapproved-before-prefix-lower-reviews.stdout",
+          "evidence/20261108T231148779367Z-review-hint-reapproved-before-prefix-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 40,
+        "head": "69a8e028b2a7152666e4172087fec45c411e08e1",
+        "base": "exp/ci/review-hint/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103750,
+            "state": "DISMISSED",
+            "commit_id": "0a30619d9cb79453e24d31250168ef64db0ca74c",
+            "submitted_at": "2026-11-08T23:07:46Z"
+          },
+          {
+            "id": 5820117408,
+            "state": "APPROVED",
+            "commit_id": "69a8e028b2a7152666e4172087fec45c411e08e1",
+            "submitted_at": "2026-11-08T23:11:34Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:10:24Z",
+            "state": "approved",
+            "review_id": 5820103750,
+            "dismissal_message": null,
+            "dismissal_commit_id": "69a8e028b2a7152666e4172087fec45c411e08e1"
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231150499623Z-review-hint-reapproved-before-prefix-upper-gh-pr.stdout",
+          "evidence/20261108T231151582570Z-review-hint-reapproved-before-prefix-upper-reviews.stdout",
+          "evidence/20261108T231152324711Z-review-hint-reapproved-before-prefix-upper-timeline.stdout"
+        ]
+      }
+    },
+    "native-prefix": {
+      "started": "2026-11-08T23:12:40.311178+00:00",
+      "finished": "2026-11-08T23:12:50.772536+00:00",
+      "lower": {
+        "number": 41,
+        "head": "c8186300224ce190ffcd8c7c592a21e142062395",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103617,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:07:44Z"
+          },
+          {
+            "id": 5820117332,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:11:33Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231241141752Z-review-hint-native-prefix-lower-gh-pr.stdout",
+          "evidence/20261108T231242233697Z-review-hint-native-prefix-lower-reviews.stdout",
+          "evidence/20261108T231243009032Z-review-hint-native-prefix-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 40,
+        "head": "b553aa5fc10118466b143d2e590f546e58b3f12b",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103750,
+            "state": "DISMISSED",
+            "commit_id": "0a30619d9cb79453e24d31250168ef64db0ca74c",
+            "submitted_at": "2026-11-08T23:07:46Z"
+          },
+          {
+            "id": 5820117408,
+            "state": "APPROVED",
+            "commit_id": "b553aa5fc10118466b143d2e590f546e58b3f12b",
+            "submitted_at": "2026-11-08T23:11:34Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:10:24Z",
+            "state": "approved",
+            "review_id": 5820103750,
+            "dismissal_message": null,
+            "dismissal_commit_id": "69a8e028b2a7152666e4172087fec45c411e08e1"
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231244769760Z-review-hint-native-prefix-upper-gh-pr.stdout",
+          "evidence/20261108T231245904462Z-review-hint-native-prefix-upper-reviews.stdout",
+          "evidence/20261108T231246658297Z-review-hint-native-prefix-upper-timeline.stdout"
+        ]
+      }
+    },
+    "native-prefix-later": {
+      "started": "2026-11-08T23:13:31.286648+00:00",
+      "finished": "2026-11-08T23:13:42.797695+00:00",
+      "lower": {
+        "number": 41,
+        "head": "c8186300224ce190ffcd8c7c592a21e142062395",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103617,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:07:44Z"
+          },
+          {
+            "id": 5820117332,
+            "state": "APPROVED",
+            "commit_id": "c8186300224ce190ffcd8c7c592a21e142062395",
+            "submitted_at": "2026-11-08T23:11:33Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231332219706Z-review-hint-native-prefix-later-lower-gh-pr.stdout",
+          "evidence/20261108T231333426117Z-review-hint-native-prefix-later-lower-reviews.stdout",
+          "evidence/20261108T231334042685Z-review-hint-native-prefix-later-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 40,
+        "head": "b553aa5fc10118466b143d2e590f546e58b3f12b",
+        "base": "exp/ci/review-hint/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "CLEAN",
+        "reviews": [
+          {
+            "id": 5820103750,
+            "state": "DISMISSED",
+            "commit_id": "0a30619d9cb79453e24d31250168ef64db0ca74c",
+            "submitted_at": "2026-11-08T23:07:46Z"
+          },
+          {
+            "id": 5820117408,
+            "state": "APPROVED",
+            "commit_id": "b553aa5fc10118466b143d2e590f546e58b3f12b",
+            "submitted_at": "2026-11-08T23:11:34Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:10:24Z",
+            "state": "approved",
+            "review_id": 5820103750,
+            "dismissal_message": null,
+            "dismissal_commit_id": "69a8e028b2a7152666e4172087fec45c411e08e1"
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231335900761Z-review-hint-native-prefix-later-upper-gh-pr.stdout",
+          "evidence/20261108T231337279820Z-review-hint-native-prefix-later-upper-reviews.stdout",
+          "evidence/20261108T231337943665Z-review-hint-native-prefix-later-upper-timeline.stdout"
+        ]
+      }
+    }
+  },
+  "review-native": {
+    "approved": {
+      "started": "2026-11-08T23:08:11.118205+00:00",
+      "finished": "2026-11-08T23:08:21.664132+00:00",
+      "lower": {
+        "number": 42,
+        "head": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+        "base": "exp/ci/review-native/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103834,
+            "state": "APPROVED",
+            "commit_id": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+            "submitted_at": "2026-11-08T23:07:48Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230812181772Z-review-native-approved-lower-gh-pr.stdout",
+          "evidence/20261108T230813242786Z-review-native-approved-lower-reviews.stdout",
+          "evidence/20261108T230814113417Z-review-native-approved-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 43,
+        "head": "bfefe5c0f2b3a08fae0d66a38ebabbb145562fab",
+        "base": "exp/ci/review-native/lower",
+        "review_decision": "APPROVED",
+        "merge_state": "UNSTABLE",
+        "reviews": [
+          {
+            "id": 5820103907,
+            "state": "APPROVED",
+            "commit_id": "bfefe5c0f2b3a08fae0d66a38ebabbb145562fab",
+            "submitted_at": "2026-11-08T23:07:49Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230815903335Z-review-native-approved-upper-gh-pr.stdout",
+          "evidence/20261108T230816928597Z-review-native-approved-upper-reviews.stdout",
+          "evidence/20261108T230817676565Z-review-native-approved-upper-timeline.stdout"
+        ]
+      }
+    },
+    "landed-prefix": {
+      "started": "2026-11-08T23:09:29.886823+00:00",
+      "finished": "2026-11-08T23:09:39.662343+00:00",
+      "lower": {
+        "number": 42,
+        "head": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+        "base": "exp/ci/review-native/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103834,
+            "state": "APPROVED",
+            "commit_id": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+            "submitted_at": "2026-11-08T23:07:48Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T230930618326Z-review-native-landed-prefix-lower-gh-pr.stdout",
+          "evidence/20261108T230931690549Z-review-native-landed-prefix-lower-reviews.stdout",
+          "evidence/20261108T230932422462Z-review-native-landed-prefix-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 43,
+        "head": "ec46b426c00e80638f28570a02ae39e022ee6d16",
+        "base": "exp/ci/review-native/trunk",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103907,
+            "state": "DISMISSED",
+            "commit_id": "bfefe5c0f2b3a08fae0d66a38ebabbb145562fab",
+            "submitted_at": "2026-11-08T23:07:49Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:09:05Z",
+            "state": "approved",
+            "review_id": 5820103907,
+            "dismissal_message": "The merge-base changed after approval."
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T230934104381Z-review-native-landed-prefix-upper-gh-pr.stdout",
+          "evidence/20261108T230935193297Z-review-native-landed-prefix-upper-reviews.stdout",
+          "evidence/20261108T230936025998Z-review-native-landed-prefix-upper-timeline.stdout"
+        ]
+      }
+    },
+    "later-after-prefix": {
+      "started": "2026-11-08T23:10:44.204408+00:00",
+      "finished": "2026-11-08T23:10:54.490848+00:00",
+      "lower": {
+        "number": 42,
+        "head": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+        "base": "exp/ci/review-native/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103834,
+            "state": "APPROVED",
+            "commit_id": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+            "submitted_at": "2026-11-08T23:07:48Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231045040388Z-review-native-later-after-prefix-lower-gh-pr.stdout",
+          "evidence/20261108T231046456005Z-review-native-later-after-prefix-lower-reviews.stdout",
+          "evidence/20261108T231047301992Z-review-native-later-after-prefix-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 43,
+        "head": "ec46b426c00e80638f28570a02ae39e022ee6d16",
+        "base": "exp/ci/review-native/trunk",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103907,
+            "state": "DISMISSED",
+            "commit_id": "bfefe5c0f2b3a08fae0d66a38ebabbb145562fab",
+            "submitted_at": "2026-11-08T23:07:49Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:09:05Z",
+            "state": "approved",
+            "review_id": 5820103907,
+            "dismissal_message": "The merge-base changed after approval."
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231049073337Z-review-native-later-after-prefix-upper-gh-pr.stdout",
+          "evidence/20261108T231050186154Z-review-native-later-after-prefix-upper-reviews.stdout",
+          "evidence/20261108T231050934175Z-review-native-later-after-prefix-upper-timeline.stdout"
+        ]
+      }
+    },
+    "native-prefix-later": {
+      "started": "2026-11-08T23:13:42.829487+00:00",
+      "finished": "2026-11-08T23:13:53.481491+00:00",
+      "lower": {
+        "number": 42,
+        "head": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+        "base": "exp/ci/review-native/trunk",
+        "review_decision": "APPROVED",
+        "merge_state": "UNKNOWN",
+        "reviews": [
+          {
+            "id": 5820103834,
+            "state": "APPROVED",
+            "commit_id": "97d99982672cf017b8d04a3b6bb87cc8f52ca3e0",
+            "submitted_at": "2026-11-08T23:07:48Z"
+          }
+        ],
+        "dismissals": [],
+        "source_files": [
+          "evidence/20261108T231343579155Z-review-native-native-prefix-later-lower-gh-pr.stdout",
+          "evidence/20261108T231344516083Z-review-native-native-prefix-later-lower-reviews.stdout",
+          "evidence/20261108T231345161309Z-review-native-native-prefix-later-lower-timeline.stdout"
+        ]
+      },
+      "upper": {
+        "number": 43,
+        "head": "ec46b426c00e80638f28570a02ae39e022ee6d16",
+        "base": "exp/ci/review-native/trunk",
+        "review_decision": "REVIEW_REQUIRED",
+        "merge_state": "BLOCKED",
+        "reviews": [
+          {
+            "id": 5820103907,
+            "state": "DISMISSED",
+            "commit_id": "bfefe5c0f2b3a08fae0d66a38ebabbb145562fab",
+            "submitted_at": "2026-11-08T23:07:49Z"
+          }
+        ],
+        "dismissals": [
+          {
+            "created_at": "2026-11-08T23:09:05Z",
+            "state": "approved",
+            "review_id": 5820103907,
+            "dismissal_message": "The merge-base changed after approval."
+          }
+        ],
+        "source_files": [
+          "evidence/20261108T231347032442Z-review-native-native-prefix-later-upper-gh-pr.stdout",
+          "evidence/20261108T231348218731Z-review-native-native-prefix-later-upper-reviews.stdout",
+          "evidence/20261108T231349034908Z-review-native-native-prefix-later-upper-timeline.stdout"
+        ]
+      }
+    }
+  }
+}

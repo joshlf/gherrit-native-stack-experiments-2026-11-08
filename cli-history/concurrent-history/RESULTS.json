@@ -1,0 +1,27 @@
+{
+  "repository": "joshlf/gherrit-native-stack-experiments-2026-11-08",
+  "pr": 10,
+  "history_comment_id": 6728278369,
+  "actors": "same authenticated account, programmed subprocesses",
+  "parallel_client_intervals_overlap": true,
+  "parallel_body_patch_http": 200,
+  "parallel_comment_patch_http": 200,
+  "both_independent_artifact_updates_preserved": true,
+  "stale_whole_body_overwrote_newer_synthetic_text": true,
+  "history_unchanged_by_stale_body_control": true,
+  "original_synthetic_body_restored": true,
+  "original_generated_comment_restored": true,
+  "final_pr_body_sha256": "27fce1f648da8ba0268cd1760f307ce832e12d7b9dd70ba3a895a52fb5652b17",
+  "final_comment_body_sha256": "b26fda821e30b296a4351eb1737d381a4ecccf32a79f148a6ca46005005dd9ea",
+  "original_pr_body_sha256": "27fce1f648da8ba0268cd1760f307ce832e12d7b9dd70ba3a895a52fb5652b17",
+  "original_comment_body_sha256": "b26fda821e30b296a4351eb1737d381a4ecccf32a79f148a6ca46005005dd9ea",
+  "known_patch_effects": 6,
+  "unknown_outcomes_retried": 0,
+  "settings_changes": 0,
+  "limits": [
+    "Client subprocess intervals overlapped; server linearization or HTTP arrival order was not observed.",
+    "Same-account programmed actors; no human usability or cross-role permission claim.",
+    "No conditional-write or API CAS protocol was used or established.",
+    "Fresh reads guarded a quiescent synthetic restoration; they do not exclude arbitrary concurrent writers."
+  ]
+}

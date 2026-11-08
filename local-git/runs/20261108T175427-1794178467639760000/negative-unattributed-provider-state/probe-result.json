@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "returncode": 3,
+  "desired_head_matches": true,
+  "receipt_operation_id": "some-other-writer",
+  "expected_operation_id": "fixture-operation-provider_applied",
+  "request_count_before": 1,
+  "request_count_after": 1,
+  "completed_checkpoint_installed": false,
+  "stdout": "",
+  "stderr": "",
+  "argv": [
+    "python3",
+    "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/local-git/harness.py",
+    "worker",
+    "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/local-git/runs/20261108T175427-1794178467639760000/negative-unattributed-provider-state/job.json",
+    "--reconcile-receipt"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "git_version": "git version 2.54.0 (Apple Git-157)",
+  "source_commit": "84c1319eb11edec800e5c899ddd07fd9d1fedc96",
+  "identical_initial_refs": true,
+  "dry_run_invoked_hook": true,
+  "dry_run_inner_publication": {
+    "refs/heads/inner-publication": "84c1319eb11edec800e5c899ddd07fd9d1fedc96"
+  },
+  "dry_run_outer_refs": {},
+  "actual_inner_publication": {
+    "refs/heads/inner-publication": "84c1319eb11edec800e5c899ddd07fd9d1fedc96"
+  },
+  "actual_outer_publication": {
+    "refs/heads/outer-publication": "84c1319eb11edec800e5c899ddd07fd9d1fedc96"
+  },
+  "captured_hook_inputs_equal": true,
+  "captured_input_fields": [
+    "argv",
+    "stdin",
+    "cwd",
+    "standard_git_environment_allowlist",
+    "environment"
+  ],
+  "environment_allowlist": [
+    "GIT_DIR",
+    "GIT_COMMON_DIR",
+    "GIT_WORK_TREE",
+    "GIT_INDEX_FILE",
+    "GIT_PREFIX",
+    "GIT_OBJECT_DIRECTORY",
+    "GIT_ALTERNATE_OBJECT_DIRECTORIES",
+    "GIT_NAMESPACE",
+    "GIT_PROTOCOL",
+    "GIT_PUSH_OPTION_COUNT",
+    "GIT_PUSH_OPTION_0",
+    "GIT_PUSH_OPTION_1",
+    "GIT_CONFIG_GLOBAL",
+    "GIT_CONFIG_NOSYSTEM",
+    "GIT_TERMINAL_PROMPT"
+  ],
+  "observed_dry_run_signal_in_captured_inputs": false,
+  "hook_sha256": "9e82dc297040fd36ad40554f5037977b80b056dcaf3f7c59396a9e9c952c9742",
+  "claim_scope": "This Git version, local transport, one changed ref, captured documented argv/stdin and explicitly allowlisted standard Git environment only. No claim that every detection mechanism is impossible.",
+  "hosted_writes": 0,
+  "global_hook_or_config_writes": 0
+}

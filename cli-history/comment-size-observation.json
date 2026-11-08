@@ -1,0 +1,24 @@
+{
+  "accepted_body_characters": 65537,
+  "accepted_body_utf8_bytes": 65537,
+  "rendered_fields": [
+    "url",
+    "html_url",
+    "issue_url",
+    "id",
+    "node_id",
+    "user",
+    "created_at",
+    "updated_at",
+    "author_association",
+    "body_html",
+    "body_text",
+    "body",
+    "reactions",
+    "performed_via_github_app",
+    "minimized",
+    "pin"
+  ],
+  "body_html_bytes": 65596,
+  "limit_status": "65536 is not a server cap in this observed request path; larger-host maximum untested"
+}

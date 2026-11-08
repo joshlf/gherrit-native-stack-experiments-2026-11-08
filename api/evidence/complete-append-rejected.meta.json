@@ -1,0 +1,229 @@
+{
+  "label": "complete-append-rejected",
+  "method": "POST",
+  "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks/28/add",
+  "payload": {
+    "pull_requests": [
+      29
+    ]
+  },
+  "start": "2026-11-08T23:00:19.315331+00:00",
+  "monotonic_start": 132.949724875,
+  "end": "2026-11-08T23:00:19.936040+00:00",
+  "monotonic_end": 133.570410708,
+  "exit": 0,
+  "http": 200,
+  "data": {
+    "id": 3220689,
+    "number": 28,
+    "node_id": "PRS_kwDOVnhIZ84AMSTR",
+    "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks/28",
+    "base": {
+      "ref": "exp/api/merge-squash/trunk"
+    },
+    "open": true,
+    "created_at": "2026-11-08T22:59:37Z",
+    "pull_requests": [
+      {
+        "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/25",
+        "id": 5216002351,
+        "number": 25,
+        "head": {
+          "ref": "exp/api/merge-squash/A",
+          "sha": "e304ad3b603be09569b2ff1fcf7029ded4af4f37",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "base": {
+          "ref": "exp/api/merge-squash/trunk",
+          "sha": "d6223f27f364a74460a907df8087d3c52331ca3d",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "node_id": "PR_kwDOVnhIZ88AAAABNuXhLw",
+        "title": "Experiment merge-squash: A",
+        "state": "closed",
+        "merged_at": "2026-11-08T22:59:46Z",
+        "draft": false,
+        "html_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/25",
+        "user": {
+          "login": "joshlf",
+          "id": 1046063,
+          "node_id": "MDQ6VXNlcjEwNDYwNjM=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1046063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/joshlf",
+          "html_url": "https://github.com/joshlf",
+          "followers_url": "https://api.github.com/users/joshlf/followers",
+          "following_url": "https://api.github.com/users/joshlf/following{/other_user}",
+          "gists_url": "https://api.github.com/users/joshlf/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/joshlf/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/joshlf/subscriptions",
+          "organizations_url": "https://api.github.com/users/joshlf/orgs",
+          "repos_url": "https://api.github.com/users/joshlf/repos",
+          "events_url": "https://api.github.com/users/joshlf/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/joshlf/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/26",
+        "id": 5216002726,
+        "number": 26,
+        "head": {
+          "ref": "exp/api/merge-squash/B",
+          "sha": "3c40e71c8166e169201fdbcfbda2f6fee09c4acd",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "base": {
+          "ref": "exp/api/merge-squash/trunk",
+          "sha": "b031070c2fd06ad94ce5b31f7f04fe5eb24c36f8",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "node_id": "PR_kwDOVnhIZ88AAAABNuXipg",
+        "title": "Experiment merge-squash: B",
+        "state": "closed",
+        "merged_at": "2026-11-08T23:00:09Z",
+        "draft": false,
+        "html_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/26",
+        "user": {
+          "login": "joshlf",
+          "id": 1046063,
+          "node_id": "MDQ6VXNlcjEwNDYwNjM=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1046063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/joshlf",
+          "html_url": "https://github.com/joshlf",
+          "followers_url": "https://api.github.com/users/joshlf/followers",
+          "following_url": "https://api.github.com/users/joshlf/following{/other_user}",
+          "gists_url": "https://api.github.com/users/joshlf/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/joshlf/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/joshlf/subscriptions",
+          "organizations_url": "https://api.github.com/users/joshlf/orgs",
+          "repos_url": "https://api.github.com/users/joshlf/repos",
+          "events_url": "https://api.github.com/users/joshlf/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/joshlf/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/27",
+        "id": 5216003210,
+        "number": 27,
+        "head": {
+          "ref": "exp/api/merge-squash/C",
+          "sha": "8decf9879d1b35230867aab9390e595d8314f41e",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "base": {
+          "ref": "exp/api/merge-squash/B",
+          "sha": "3c40e71c8166e169201fdbcfbda2f6fee09c4acd",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "node_id": "PR_kwDOVnhIZ88AAAABNuXkig",
+        "title": "Experiment merge-squash: C",
+        "state": "closed",
+        "merged_at": "2026-11-08T23:00:10Z",
+        "draft": false,
+        "html_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/27",
+        "user": {
+          "login": "joshlf",
+          "id": 1046063,
+          "node_id": "MDQ6VXNlcjEwNDYwNjM=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1046063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/joshlf",
+          "html_url": "https://github.com/joshlf",
+          "followers_url": "https://api.github.com/users/joshlf/followers",
+          "following_url": "https://api.github.com/users/joshlf/following{/other_user}",
+          "gists_url": "https://api.github.com/users/joshlf/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/joshlf/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/joshlf/subscriptions",
+          "organizations_url": "https://api.github.com/users/joshlf/orgs",
+          "repos_url": "https://api.github.com/users/joshlf/repos",
+          "events_url": "https://api.github.com/users/joshlf/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/joshlf/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08/pulls/29",
+        "id": 5216009189,
+        "number": 29,
+        "head": {
+          "ref": "exp/api/merge-squash/D",
+          "sha": "f77e368ee11c17058011c9280051823534037a0d",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "base": {
+          "ref": "exp/api/merge-squash/C",
+          "sha": "8decf9879d1b35230867aab9390e595d8314f41e",
+          "repo": {
+            "id": 1450723431,
+            "url": "https://api.github.com/repos/joshlf/gherrit-native-stack-experiments-2026-11-08",
+            "name": "gherrit-native-stack-experiments-2026-11-08"
+          }
+        },
+        "node_id": "PR_kwDOVnhIZ88AAAABNuX75Q",
+        "title": "Experiment complete group: D",
+        "state": "open",
+        "merged_at": null,
+        "draft": false,
+        "html_url": "https://github.com/joshlf/gherrit-native-stack-experiments-2026-11-08/pull/29",
+        "user": {
+          "login": "joshlf",
+          "id": 1046063,
+          "node_id": "MDQ6VXNlcjEwNDYwNjM=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1046063?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/joshlf",
+          "html_url": "https://github.com/joshlf",
+          "followers_url": "https://api.github.com/users/joshlf/followers",
+          "following_url": "https://api.github.com/users/joshlf/following{/other_user}",
+          "gists_url": "https://api.github.com/users/joshlf/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/joshlf/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/joshlf/subscriptions",
+          "organizations_url": "https://api.github.com/users/joshlf/orgs",
+          "repos_url": "https://api.github.com/users/joshlf/repos",
+          "events_url": "https://api.github.com/users/joshlf/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/joshlf/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      }
+    ]
+  }
+}

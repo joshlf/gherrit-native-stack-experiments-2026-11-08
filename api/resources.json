@@ -1,0 +1,335 @@
+{
+  "capabilities": {
+    "name": "capabilities",
+    "prefix": "exp/api/capabilities",
+    "trunk": "exp/api/capabilities/trunk",
+    "trunk_sha": "96004c364294c6361e8e7ada6f718528ddc3e8a9",
+    "heads": {
+      "A": {
+        "ref": "exp/api/capabilities/A",
+        "sha": "527adf3c9f7761591191059814fdb5bad92d962d"
+      },
+      "B": {
+        "ref": "exp/api/capabilities/B",
+        "sha": "5015b0f75fee9cd1d280e2ffb6ada3250fdaadbb"
+      },
+      "C": {
+        "ref": "exp/api/capabilities/C",
+        "sha": "d4f1fa49dd89e635c7ef1696963a848355c2d787"
+      }
+    },
+    "prs": {
+      "A": 17,
+      "B": 18,
+      "C": 20
+    },
+    "created": "2026-11-08T22:58:07.890824+00:00",
+    "stack": 79
+  },
+  "merge-merge": {
+    "name": "merge-merge",
+    "prefix": "exp/api/merge-merge",
+    "trunk": "exp/api/merge-merge/trunk",
+    "trunk_sha": "a4e83d4da23a0cdfb487fcb50fcc3e042bc4e040",
+    "heads": {
+      "A": {
+        "ref": "exp/api/merge-merge/A",
+        "sha": "948052e9a32e1289ff57c60123d83d40a9b1806d"
+      },
+      "B": {
+        "ref": "exp/api/merge-merge/B",
+        "sha": "9f640ba2a86b0e6e3e9c7d969cfa9bf418f50e5b"
+      },
+      "C": {
+        "ref": "exp/api/merge-merge/C",
+        "sha": "56227a7811c44b23da629651ade9dbc8091bddb1"
+      }
+    },
+    "prs": {
+      "A": 21,
+      "B": 22,
+      "C": 23
+    },
+    "created": "2026-11-08T22:58:38.705660+00:00",
+    "stack": 24
+  },
+  "merge-squash": {
+    "name": "merge-squash",
+    "prefix": "exp/api/merge-squash",
+    "trunk": "exp/api/merge-squash/trunk",
+    "trunk_sha": "d6223f27f364a74460a907df8087d3c52331ca3d",
+    "heads": {
+      "A": {
+        "ref": "exp/api/merge-squash/A",
+        "sha": "e304ad3b603be09569b2ff1fcf7029ded4af4f37"
+      },
+      "B": {
+        "ref": "exp/api/merge-squash/B",
+        "sha": "249ddd2e402e6739b13e55d65147a8bf08e6c03e"
+      },
+      "C": {
+        "ref": "exp/api/merge-squash/C",
+        "sha": "c7294121c0f5bef9ca2fdcfd0467cb352c525708"
+      },
+      "D": {
+        "ref": "exp/api/merge-squash/D",
+        "sha": "f77e368ee11c17058011c9280051823534037a0d"
+      },
+      "E": {
+        "ref": "exp/api/merge-squash/E",
+        "sha": "d56629452755fb82b7977565ff9768d7716efc54"
+      },
+      "F": {
+        "ref": "exp/api/merge-squash/F",
+        "sha": "d10a4451bfe246e36b33d59f6208c3c99fa1d582"
+      }
+    },
+    "prs": {
+      "A": 25,
+      "B": 26,
+      "C": 27,
+      "D": 29,
+      "E": 30,
+      "F": 60
+    },
+    "created": "2026-11-08T22:59:28.874672+00:00",
+    "stack": 61
+  },
+  "merge-rebase": {
+    "name": "merge-rebase",
+    "prefix": "exp/api/merge-rebase",
+    "trunk": "exp/api/merge-rebase/trunk",
+    "trunk_sha": "d30a19acefbe6ee6793dceb651cb29fad0a42a34",
+    "heads": {
+      "A": {
+        "ref": "exp/api/merge-rebase/A",
+        "sha": "b41607a314dce157b96b65e84b8032a9ddc2c29a"
+      },
+      "B": {
+        "ref": "exp/api/merge-rebase/B",
+        "sha": "300762cc7424479a872d847a575fa766f0cdb02a"
+      },
+      "C": {
+        "ref": "exp/api/merge-rebase/C",
+        "sha": "327f50eba1b209b60f0fdebb3015fc1b7d7f2fc0"
+      }
+    },
+    "prs": {
+      "A": 31,
+      "B": 32,
+      "C": 33
+    },
+    "created": "2026-11-08T23:00:29.796924+00:00",
+    "stack": 34
+  },
+  "structure": {
+    "name": "structure",
+    "prefix": "exp/api/structure",
+    "trunk": "exp/api/structure/trunk2",
+    "trunk_sha": "fe1ed701893ea3968be40ad840d14d5958a15515",
+    "heads": {
+      "A": {
+        "ref": "exp/api/structure/A",
+        "sha": "c67e392fe716dfa244f0cbf15cf36a70a1888ed1"
+      },
+      "B": {
+        "ref": "exp/api/structure/B",
+        "sha": "08bcbcf86ead875e35b63abd1017b0d9d4be5fad"
+      },
+      "C": {
+        "ref": "exp/api/structure/C",
+        "sha": "381d5d6e1a711a5d7831f833d29b2004aaae94a1"
+      },
+      "D": {
+        "ref": "exp/api/structure/D",
+        "sha": "71f49b2bef3df34bfbbdef3cc60eb0fac011cf32"
+      }
+    },
+    "prs": {
+      "A": 47,
+      "B": 48,
+      "C": 49,
+      "D": 52
+    },
+    "created": "2026-11-08T23:13:07.946875+00:00",
+    "stack": 56
+  },
+  "unsafe-reorder": {
+    "name": "unsafe-reorder",
+    "prefix": "exp/api/unsafe-reorder",
+    "trunk": "exp/api/unsafe-reorder/trunk",
+    "trunk_sha": "77a0480019b3ac060fdf9aca9de643bd9e48690b",
+    "heads": {
+      "A": {
+        "ref": "exp/api/unsafe-reorder/A",
+        "sha": "817968f5390f7a1deea9e54687db5866ee335ff8"
+      },
+      "B": {
+        "ref": "exp/api/unsafe-reorder/B",
+        "sha": "86caf01525d823a17c6a35b94c2ed59f14f68cac"
+      }
+    },
+    "prs": {
+      "A": 57,
+      "B": 58
+    },
+    "created": "2026-11-08T23:15:27.355759+00:00",
+    "stack": 59
+  },
+  "atomic-control": {
+    "name": "atomic-control",
+    "prefix": "exp/api/atomic-control",
+    "trunk": "exp/api/atomic-control/trunk",
+    "trunk_sha": "9040e29a4161c9bdcb064099d2900cecde845cbf",
+    "heads": {
+      "A": {
+        "ref": "exp/api/atomic-control/A",
+        "sha": "5b4c30864dfd21b5ad22ae9ecedb33ee3fa9dc17"
+      },
+      "B": {
+        "ref": "exp/api/atomic-control/B",
+        "sha": "e68f9cc53ff12fdeed9a3e62adf368ad9d25ce9e"
+      }
+    },
+    "prs": {
+      "A": 65,
+      "B": 66
+    },
+    "created": "2026-11-08T23:22:24.196898+00:00",
+    "stack": 67
+  },
+  "race-selected": {
+    "name": "race-selected",
+    "prefix": "exp/api/race-selected",
+    "trunk": "exp/api/race-selected/trunk",
+    "trunk_sha": "8f8187ea38c02178de0001036ebd8bfa719a708d",
+    "heads": {
+      "A": {
+        "ref": "exp/api/race-selected/A",
+        "sha": "d91c79516b0678f481185e316bcb250450e7ecad"
+      },
+      "B": {
+        "ref": "exp/api/race-selected/B",
+        "sha": "f1daa6ba67937810841e63d8ef514dde56d78660"
+      }
+    },
+    "prs": {
+      "A": 68,
+      "B": 69
+    },
+    "created": "2026-11-08T23:22:38.972167+00:00",
+    "stack": 70
+  },
+  "race-downstack": {
+    "name": "race-downstack",
+    "prefix": "exp/api/race-downstack",
+    "trunk": "exp/api/race-downstack/trunk",
+    "trunk_sha": "0880890f2a2b071a3e9e79469adb40a831fa99e2",
+    "heads": {
+      "A": {
+        "ref": "exp/api/race-downstack/A",
+        "sha": "3d639a7966c2706cf1aa4004f91ab02a4ce47be9"
+      },
+      "B": {
+        "ref": "exp/api/race-downstack/B",
+        "sha": "ecec8452c8de46bc63264c8b2794c20f15982f2d"
+      },
+      "C": {
+        "ref": "exp/api/race-downstack/C",
+        "sha": "fc5520a4804943e515267af0225d5be5cf59386c"
+      }
+    },
+    "prs": {
+      "A": 71,
+      "B": 72,
+      "C": 73
+    },
+    "created": "2026-11-08T23:22:54.464027+00:00",
+    "stack": 74
+  },
+  "race-unstack": {
+    "name": "race-unstack",
+    "prefix": "exp/api/race-unstack",
+    "trunk": "exp/api/race-unstack/trunk",
+    "trunk_sha": "7a1de931eaca8834fd30a888d14e365c9d6af07b",
+    "heads": {
+      "A": {
+        "ref": "exp/api/race-unstack/A",
+        "sha": "f3c6f8114b94f83c94d89302a7e927527c2ea840"
+      },
+      "B": {
+        "ref": "exp/api/race-unstack/B",
+        "sha": "f66759e6d17e7678b559c2dc8a45da8505427c58"
+      },
+      "C": {
+        "ref": "exp/api/race-unstack/C",
+        "sha": "a0452e8530d0032a7e009f1a3654ef0c8ec8d1a3"
+      }
+    },
+    "prs": {
+      "A": 75,
+      "B": 76,
+      "C": 77
+    },
+    "created": "2026-11-08T23:23:11.158467+00:00",
+    "stack": 78
+  },
+  "observer": {
+    "name": "observer",
+    "prefix": "exp/api/observer",
+    "trunk": "exp/api/observer/trunk",
+    "trunk_sha": "b642e05b72432b04eafbab390bb538e153a15b3b",
+    "heads": {
+      "A": {
+        "ref": "exp/api/observer/A",
+        "sha": "e06cc13722fa3946e023a44b3ec50914697fb3e9"
+      },
+      "B": {
+        "ref": "exp/api/observer/B",
+        "sha": "cc8b59264ab06f78877f75c99ecdb742be2f2b58"
+      },
+      "C": {
+        "ref": "exp/api/observer/C",
+        "sha": "17d16f856a49f41e60cc7de864403318d737cbbe"
+      },
+      "D": {
+        "ref": "exp/api/observer/D",
+        "sha": "e6551ba6aff3ac8a38ca73c2efec749a3de76257"
+      }
+    },
+    "prs": {
+      "A": 83,
+      "B": 84,
+      "C": 85,
+      "D": 86
+    },
+    "created": "2026-11-08T23:23:42.877886+00:00",
+    "stack": 87
+  },
+  "lost-receipts": {
+    "name": "lost-receipts",
+    "prefix": "exp/api/lost-receipts",
+    "trunk": "exp/api/lost-receipts/trunk",
+    "trunk_sha": "d2a8412e70a02c4a1024ed2a1b7c590037f0062a",
+    "heads": {
+      "A": {
+        "ref": "exp/api/lost-receipts/A",
+        "sha": "e3796dbc9618f999c410675ae7c8208a1f6bd32e"
+      },
+      "B": {
+        "ref": "exp/api/lost-receipts/B",
+        "sha": "b505e2b94b728e872e24d78b10faf276b5b92294"
+      },
+      "C": {
+        "ref": "exp/api/lost-receipts/C",
+        "sha": "8d1fbb642a35061a14e9db1245a63bdd1c7d4cb7"
+      }
+    },
+    "prs": {
+      "A": 90,
+      "B": 91,
+      "C": 92
+    },
+    "created": "2026-11-08T23:29:48.746378+00:00"
+  }
+}

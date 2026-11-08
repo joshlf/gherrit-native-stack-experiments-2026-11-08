@@ -1,0 +1,41 @@
+{
+  "at": "2026-11-08T23:15:20.792224+00:00",
+  "workflow_permissions": {
+    "default_workflow_permissions": "read",
+    "can_approve_pull_request_reviews": false
+  },
+  "automation_runs": [
+    {
+      "id": 42533568456,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 42533566935,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 42533564965,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 42533563245,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 42533561428,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 42533559791,
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "pending_automation_ids": [],
+  "more_bot_dispatches_planned": false
+}

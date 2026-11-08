@@ -1,0 +1,130 @@
+{
+  "fixture": {
+    "name": "lost-receipts",
+    "prefix": "exp/api/lost-receipts",
+    "trunk": "exp/api/lost-receipts/trunk",
+    "trunk_sha": "d2a8412e70a02c4a1024ed2a1b7c590037f0062a",
+    "heads": {
+      "A": {
+        "ref": "exp/api/lost-receipts/A",
+        "sha": "e3796dbc9618f999c410675ae7c8208a1f6bd32e"
+      },
+      "B": {
+        "ref": "exp/api/lost-receipts/B",
+        "sha": "b505e2b94b728e872e24d78b10faf276b5b92294"
+      },
+      "C": {
+        "ref": "exp/api/lost-receipts/C",
+        "sha": "8d1fbb642a35061a14e9db1245a63bdd1c7d4cb7"
+      }
+    },
+    "prs": {
+      "A": 90,
+      "B": 91,
+      "C": 92
+    },
+    "created": "2026-11-08T23:29:48.746378+00:00"
+  },
+  "faults": [
+    {
+      "exit": -9,
+      "client_ack": null
+    },
+    {
+      "exit": -9,
+      "client_ack": null
+    },
+    {
+      "exit": -9,
+      "client_ack": null
+    }
+  ],
+  "recovery": {
+    "create": {
+      "decision": "positive transition attributable in sole-writer fixture",
+      "stack": 93,
+      "observed_memberships": {
+        "A": {
+          "id": 3221150,
+          "number": 93,
+          "base": {
+            "ref": "exp/api/lost-receipts/trunk",
+            "sha": "d2a8412e70a02c4a1024ed2a1b7c590037f0062a"
+          },
+          "size": 2,
+          "position": 1
+        },
+        "B": {
+          "id": 3221150,
+          "number": 93,
+          "base": {
+            "ref": "exp/api/lost-receipts/trunk",
+            "sha": "d2a8412e70a02c4a1024ed2a1b7c590037f0062a"
+          },
+          "size": 2,
+          "position": 2
+        },
+        "C": null
+      },
+      "client_ack": null,
+      "resent": false
+    },
+    "append": {
+      "decision": "positive membership transition attributable in sole-writer fixture",
+      "observed_memberships": {
+        "A": {
+          "id": 3221150,
+          "number": 93,
+          "base": {
+            "ref": "exp/api/lost-receipts/trunk",
+            "sha": "d2a8412e70a02c4a1024ed2a1b7c590037f0062a"
+          },
+          "size": 3,
+          "position": 1
+        },
+        "B": {
+          "id": 3221150,
+          "number": 93,
+          "base": {
+            "ref": "exp/api/lost-receipts/trunk",
+            "sha": "d2a8412e70a02c4a1024ed2a1b7c590037f0062a"
+          },
+          "size": 3,
+          "position": 2
+        },
+        "C": {
+          "id": 3221150,
+          "number": 93,
+          "base": {
+            "ref": "exp/api/lost-receipts/trunk",
+            "sha": "d2a8412e70a02c4a1024ed2a1b7c590037f0062a"
+          },
+          "size": 3,
+          "position": 3
+        }
+      },
+      "resent": false
+    },
+    "unstack": {
+      "decision": "remain indeterminate; absence alone does not settle the dispatched write",
+      "observed_memberships": {
+        "A": null,
+        "B": null,
+        "C": null
+      },
+      "resent": false,
+      "overlapping_writes_after": 0
+    }
+  },
+  "oracle_http": {
+    "receipt-create": 201,
+    "receipt-append": 200,
+    "receipt-unstack": 204
+  },
+  "limits": [
+    "Injected after actual server acknowledgement",
+    "No true network timeout or provider fence",
+    "Attribution limited to isolated sole-writer fixture",
+    "Unstack remains unresolved from client evidence alone"
+  ]
+}

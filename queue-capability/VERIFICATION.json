@@ -1,0 +1,15 @@
+{
+  "schema_validated_request": true,
+  "exact_branch_only": true,
+  "repository_owner_type": "User",
+  "admin_permission": true,
+  "rejection_observed": true,
+  "no_ruleset_created": true,
+  "one_retained_queue_trunk": true,
+  "seed_signature_verified": true,
+  "repository_merge_options_unchanged": true,
+  "dispatched_writes": 2,
+  "unresolved_subprocess_receipts": 0,
+  "queue_prs_or_groups_created": 0,
+  "behavioral_queue_tests": "not run because queue rule unavailable"
+}

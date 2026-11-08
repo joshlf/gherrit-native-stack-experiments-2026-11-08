@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "result_checks": 122,
+  "harness_sha256": "548714fe2959e48dfd61286683a4773405affc23b2591e2a48637c5c76ebb7e3",
+  "saved_and_current_harness_identical": true,
+  "report_local_links_exist": true,
+  "authorship": [
+    {
+      "repository": "integration-repo",
+      "unique_commits_checked": 103,
+      "author_identity": "Josh Liebow-Feeser <hello@joshlf.com>",
+      "exact_trailer_count_per_commit": 1
+    },
+    {
+      "repository": "shared-file-repo",
+      "unique_commits_checked": 29,
+      "author_identity": "Josh Liebow-Feeser <hello@joshlf.com>",
+      "exact_trailer_count_per_commit": 1
+    },
+    {
+      "repository": "ordinary-git-repo",
+      "unique_commits_checked": 12,
+      "author_identity": "Josh Liebow-Feeser <hello@joshlf.com>",
+      "exact_trailer_count_per_commit": 1
+    }
+  ]
+}

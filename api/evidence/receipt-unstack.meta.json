@@ -1,0 +1,13 @@
+{
+  "label": "receipt-unstack",
+  "method": "POST",
+  "path": "repos/joshlf/gherrit-native-stack-experiments-2026-11-08/stacks/93/unstack",
+  "payload": null,
+  "start": "2026-11-08T23:30:02.337235+00:00",
+  "monotonic_start": 0.01986025,
+  "end": "2026-11-08T23:30:02.882652+00:00",
+  "monotonic_end": 0.565112166,
+  "exit": 0,
+  "http": 204,
+  "data": null
+}
