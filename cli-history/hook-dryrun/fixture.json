@@ -1,8 +1,0 @@
-{
-  "git_binary": "/usr/bin/git",
-  "git_version": "git version 2.54.0 (Apple Git-157)",
-  "source_repo": "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/cli-history/hook-dryrun/repo",
-  "outer_sink": "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/cli-history/hook-dryrun/outer.git",
-  "inner_sink": "/Users/codex/Documents/Codex/2026-10-13/find-where-the-gherrit-checkout-lives/experiments/native-stacks-2026-11-08/cli-history/hook-dryrun/inner.git",
-  "environment_control": "clear inherited GIT_* only in child processes; use no system/global config; no global files changed"
-}
