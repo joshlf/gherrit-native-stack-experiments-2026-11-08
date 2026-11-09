@@ -43,8 +43,8 @@ jobs:
           op=inputs['operation'];notice="*Authored by an AI agent acting on joshlf's behalf.*"
           if op=='create-pr':
             head=inputs['head'];base=inputs['base']
-            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))
-            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))
+            assert head.startswith(('exp/fu2/ci/',))
+            assert base.startswith(('exp/fu2/ci/',))
             body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'
             if notice not in body:body+='\n\n'+notice
             payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}
@@ -52,7 +52,7 @@ jobs:
           elif op=='approve-pr':
             number=int(inputs['number']);assert number>0
             pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))
-            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))
+            assert pr['head']['ref'].startswith(('exp/fu2/ci/',))
             payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\n\n'+notice}
             path=f'repos/{repo}/pulls/{number}/reviews'
           else:raise RuntimeError('Unsupported operation')
