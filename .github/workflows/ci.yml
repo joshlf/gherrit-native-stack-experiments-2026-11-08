@@ -1,0 +1,50 @@
+name: Target profile probe - minimal payload
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate and Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout fixture
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Capture event and exact Git identities
+        shell: bash
+        run: |
+          python3 - <<'PYCODE'
+          import json, os, pathlib, subprocess
+          event = json.loads(pathlib.Path(os.environ['GITHUB_EVENT_PATH']).read_text())
+          pr = event.get('pull_request', {})
+          git = lambda *args: subprocess.check_output(['git', *args], text=True).strip()
+          print(json.dumps({
+              'scope': 'Minimal synthetic event/check probe; full Rust CI did not run',
+              'event_name': os.environ['GITHUB_EVENT_NAME'],
+              'action': event.get('action'),
+              'github_sha': os.environ['GITHUB_SHA'],
+              'github_ref': os.environ['GITHUB_REF'],
+              'run_id': os.environ['GITHUB_RUN_ID'],
+              'run_attempt': os.environ['GITHUB_RUN_ATTEMPT'],
+              'source_sha': pr.get('head', {}).get('sha'),
+              'base_sha': pr.get('base', {}).get('sha'),
+              'merge_commit_sha': pr.get('merge_commit_sha'),
+              'checkout_head': git('rev-parse', 'HEAD'),
+              'checkout_tree': git('rev-parse', 'HEAD^{tree}'),
+              'checkout_parents': git('rev-list', '--parents', '-n', '1', 'HEAD')
+          }, sort_keys=True))
+          PYCODE
+      - name: Evaluate known fixture outcome
+        shell: bash
+        run: |
+          if test -f .fixture-fail; then
+            echo 'Expected synthetic failure for stale-SHA control'
+            exit 1
+          fi
+          echo 'Minimal payload passed; full Rust CI did not run'
