@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   validate:
-    name: Wrong context - target probe
+    name: Validate and Test
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
