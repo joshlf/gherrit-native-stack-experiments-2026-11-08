@@ -1,74 +1,152 @@
-name: automation
+name: history-actors
 on:
   workflow_dispatch:
     inputs:
       operation:
         type: choice
-        options: [create-pr, approve-pr]
+        options: [create, edit]
         required: true
-      head:
+      permission_mode:
+        type: choice
+        options: [write, read]
+        default: write
+        required: true
+      number:
         type: string
-        required: false
-      base:
-        type: string
-        required: false
-      title:
+        required: true
+      comment_id:
         type: string
         required: false
       body:
         type: string
-        required: false
-      number:
+        required: true
+      start_at:
         type: string
         required: false
 permissions:
   contents: read
-  pull-requests: write
 jobs:
-  automation:
+  history-write:
+    if: ${{ inputs.permission_mode == 'write' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: write
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
-      - name: Perform one explicitly dispatched experimental PR operation
+      - name: Run fixed scoped history operation
         shell: bash
         run: |
-          mkdir -p evidence
           python3 - <<'PYCODE'
-          import json,os,subprocess
-          from pathlib import Path
-          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())
-          inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']
+          import datetime,hashlib,json,os,pathlib,subprocess,time
+          P=pathlib.Path('evidence');P.mkdir(exist_ok=True)
+          now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat()
+          event=json.loads(pathlib.Path(os.environ['GITHUB_EVENT_PATH']).read_text());inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']
           assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'
-          op=inputs['operation'];notice="*Authored by an AI agent acting on joshlf's behalf.*"
-          if op=='create-pr':
-            head=inputs['head'];base=inputs['base']
-            assert head.startswith(('exp/api/','exp/ci/','exp/cli/'))
-            assert base.startswith(('exp/api/','exp/ci/','exp/cli/'))
-            body=inputs.get('body') or 'Synthetic PR for native-stack experiments.'
-            if notice not in body:body+='\n\n'+notice
-            payload={'head':head,'base':base,'title':inputs.get('title') or 'Experimental PR fixture','body':body}
-            path=f'repos/{repo}/pulls'
-          elif op=='approve-pr':
-            number=int(inputs['number']);assert number>0
-            pr=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/pulls/{number}'],text=True))
-            assert pr['head']['ref'].startswith(('exp/api/','exp/ci/','exp/cli/'))
-            payload={'event':'APPROVE','body':'Experimental approval to measure native review behavior; not a production code review.\n\n'+notice}
-            path=f'repos/{repo}/pulls/{number}/reviews'
-          else:raise RuntimeError('Unsupported operation')
-          Path('evidence/intent.json').write_text(json.dumps({'operation':op,'path':path,'payload':payload},indent=2)+'\n')
-          p=Path('evidence/request.json');p.write_text(json.dumps(payload))
-          result=subprocess.run(['gh','api','-X','POST',path,'--input',str(p)],text=True,capture_output=True)
-          Path('evidence/response.json').write_text(result.stdout)
-          Path('evidence/stderr.txt').write_text(result.stderr)
-          print('Operation',op,'exit',result.returncode)
-          if result.returncode==0:
-            data=json.loads(result.stdout);print(json.dumps({k:data.get(k) for k in ['number','id','html_url','state']},indent=2))
-          raise SystemExit(result.returncode)
+          number=int(inputs['number']);assert number>0
+          notice="*Authored by an AI agent acting on joshlf's behalf.*"
+          body=inputs['body'];assert len(body.encode())<=4096 and notice in body
+          operation=inputs['operation'];assert operation in ['create','edit']
+          meta={'operation':operation,'permission_mode':inputs['permission_mode'],'number':number,'started':now(),'run_id':os.environ['GITHUB_RUN_ID']}
+          def call(label,path,method='GET',payload=None):
+              args=['gh','api','--include','--method',method,path]
+              data=json.dumps(payload) if payload is not None else None
+              if data is not None:args+=['--input','-']
+              intent={'at':now(),'method':method,'path':path,'payload':payload}
+              (P/(label+'-intent.json')).write_text(json.dumps(intent,indent=2)+'\n')
+              started=now();result=subprocess.run(args,input=data,text=True,capture_output=True);finished=now()
+              (P/(label+'-response.txt')).write_text(result.stdout);(P/(label+'-stderr.txt')).write_text(result.stderr)
+              detail={'started':started,'finished':finished,'exit':result.returncode};(P/(label+'-meta.json')).write_text(json.dumps(detail,indent=2)+'\n')
+              raw=result.stdout.split('\n\n',1)[-1]
+              try:parsed=json.loads(raw)
+              except json.JSONDecodeError:parsed=None
+              return parsed,detail
+          pr,_=call('before-pr',f'repos/{repo}/pulls/{number}');assert pr['head']['ref'].startswith('exp/fu2/ci/history-')
+          meta['before_body']=pr['body'];meta['pr_author']=pr['user']
+          if operation=='edit':
+              cid=int(inputs['comment_id']);assert cid>0
+              comment,_=call('before-comment',f'repos/{repo}/issues/comments/{cid}');assert comment['issue_url']==f'https://api.github.com/repos/{repo}/issues/{number}'
+              meta['before_comment']=comment
+              endpoint=f'repos/{repo}/issues/comments/{cid}';method='PATCH'
+          else:endpoint=f'repos/{repo}/issues/{number}/comments';method='POST'
+          target=float(inputs.get('start_at') or '0');meta['scheduled_epoch']=target
+          if target:
+              if time.time()>target-1:
+                  meta['schedule_missed_before_write']=True;(P/'summary.json').write_text(json.dumps(meta,indent=2)+'\n');raise SystemExit('Scheduled write premise missed; no mutation dispatched')
+              while time.time()<target:time.sleep(min(.05,max(0,target-time.time())))
+          response,interval=call('mutation',endpoint,method,{'body':body});meta['mutation_interval']=interval;meta['mutation_response']=response
+          pr,_=call('after-pr',f'repos/{repo}/pulls/{number}');meta['after_body']=pr['body']
+          listed,_=call('after-comments',f'repos/{repo}/issues/{number}/comments?per_page=100');meta['after_comments']=listed;meta['finished']=now()
+          (P/'summary.json').write_text(json.dumps(meta,indent=2)+'\n')
+          print(json.dumps({'operation':operation,'mode':inputs['permission_mode'],'exit':interval['exit'],'id':response.get('id') if isinstance(response,dict) else None,'message':response.get('message') if isinstance(response,dict) else None,'started':interval['started'],'finished':interval['finished']},indent=2))
           PYCODE
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: automation-${{ github.run_id }}-${{ github.run_attempt }}
+          name: history-${{ github.run_id }}-${{ github.run_attempt }}
+          path: evidence/
+          retention-days: 30
+  history-read:
+    if: ${{ inputs.permission_mode == 'read' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Run fixed scoped history operation
+        shell: bash
+        run: |
+          python3 - <<'PYCODE'
+          import datetime,hashlib,json,os,pathlib,subprocess,time
+          P=pathlib.Path('evidence');P.mkdir(exist_ok=True)
+          now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat()
+          event=json.loads(pathlib.Path(os.environ['GITHUB_EVENT_PATH']).read_text());inputs=event['inputs'];repo=os.environ['GITHUB_REPOSITORY']
+          assert repo=='joshlf/gherrit-native-stack-experiments-2026-11-08'
+          number=int(inputs['number']);assert number>0
+          notice="*Authored by an AI agent acting on joshlf's behalf.*"
+          body=inputs['body'];assert len(body.encode())<=4096 and notice in body
+          operation=inputs['operation'];assert operation in ['create','edit']
+          meta={'operation':operation,'permission_mode':inputs['permission_mode'],'number':number,'started':now(),'run_id':os.environ['GITHUB_RUN_ID']}
+          def call(label,path,method='GET',payload=None):
+              args=['gh','api','--include','--method',method,path]
+              data=json.dumps(payload) if payload is not None else None
+              if data is not None:args+=['--input','-']
+              intent={'at':now(),'method':method,'path':path,'payload':payload}
+              (P/(label+'-intent.json')).write_text(json.dumps(intent,indent=2)+'\n')
+              started=now();result=subprocess.run(args,input=data,text=True,capture_output=True);finished=now()
+              (P/(label+'-response.txt')).write_text(result.stdout);(P/(label+'-stderr.txt')).write_text(result.stderr)
+              detail={'started':started,'finished':finished,'exit':result.returncode};(P/(label+'-meta.json')).write_text(json.dumps(detail,indent=2)+'\n')
+              raw=result.stdout.split('\n\n',1)[-1]
+              try:parsed=json.loads(raw)
+              except json.JSONDecodeError:parsed=None
+              return parsed,detail
+          pr,_=call('before-pr',f'repos/{repo}/pulls/{number}');assert pr['head']['ref'].startswith('exp/fu2/ci/history-')
+          meta['before_body']=pr['body'];meta['pr_author']=pr['user']
+          if operation=='edit':
+              cid=int(inputs['comment_id']);assert cid>0
+              comment,_=call('before-comment',f'repos/{repo}/issues/comments/{cid}');assert comment['issue_url']==f'https://api.github.com/repos/{repo}/issues/{number}'
+              meta['before_comment']=comment
+              endpoint=f'repos/{repo}/issues/comments/{cid}';method='PATCH'
+          else:endpoint=f'repos/{repo}/issues/{number}/comments';method='POST'
+          target=float(inputs.get('start_at') or '0');meta['scheduled_epoch']=target
+          if target:
+              if time.time()>target-1:
+                  meta['schedule_missed_before_write']=True;(P/'summary.json').write_text(json.dumps(meta,indent=2)+'\n');raise SystemExit('Scheduled write premise missed; no mutation dispatched')
+              while time.time()<target:time.sleep(min(.05,max(0,target-time.time())))
+          response,interval=call('mutation',endpoint,method,{'body':body});meta['mutation_interval']=interval;meta['mutation_response']=response
+          pr,_=call('after-pr',f'repos/{repo}/pulls/{number}');meta['after_body']=pr['body']
+          listed,_=call('after-comments',f'repos/{repo}/issues/{number}/comments?per_page=100');meta['after_comments']=listed;meta['finished']=now()
+          (P/'summary.json').write_text(json.dumps(meta,indent=2)+'\n')
+          print(json.dumps({'operation':operation,'mode':inputs['permission_mode'],'exit':interval['exit'],'id':response.get('id') if isinstance(response,dict) else None,'message':response.get('message') if isinstance(response,dict) else None,'started':interval['started'],'finished':interval['finished']},indent=2))
+          PYCODE
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: history-${{ github.run_id }}-${{ github.run_attempt }}
           path: evidence/
           retention-days: 30
