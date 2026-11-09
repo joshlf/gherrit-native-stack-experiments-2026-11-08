@@ -1,0 +1,31 @@
+{
+  "members": [
+    {
+      "base_ref": "exh-1109-causal-rb-app-001/trunk",
+      "head_oid": "5afe9c34540002ec9554c2e9d279f4fa895d89db",
+      "head_ref": "exh-1109-causal-rb-app-001/A",
+      "node_id": "PR_kwDOVnhIZ88AAAABN5USaw",
+      "number": 654
+    },
+    {
+      "base_ref": "exh-1109-causal-rb-app-001/A",
+      "head_oid": "11ddd6ef32afc4bca7865a22c70248a6156edee7",
+      "head_ref": "exh-1109-causal-rb-app-001/B",
+      "node_id": "PR_kwDOVnhIZ88AAAABN5UTrw",
+      "number": 655
+    }
+  ],
+  "prefix": "exh-1109-causal-rb-app-001",
+  "probe_sha256": "476029710ad48039c36e423fd6ff6c6219bd591edb96a6df82934eaec1f1e12b",
+  "repository": "joshlf/gherrit-native-stack-experiments-2026-11-08",
+  "repository_id": 1450723431,
+  "root_reviewed": true,
+  "runner_ref": "refs/heads/exh-1109-causal-rb-app-001/runner",
+  "schema": "native-rebase-app-one-shot-v1",
+  "stack_node_id": "PRS_kwDOVnhIZ84AMaim",
+  "stack_number": 656,
+  "trunk": {
+    "ref": "exh-1109-causal-rb-app-001/trunk",
+    "sha": "1eadf6cbffab4ef16d21830f06e5806cf8eb1b1a"
+  }
+}

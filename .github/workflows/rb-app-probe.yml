@@ -1,0 +1,49 @@
+name: One-shot Actions App token native rebase capability
+
+on:
+  push:
+    branches:
+      - exh-1109-causal-rb-app-001/runner
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: exh-1109-causal-rb-app-001-one-shot
+  cancel-in-progress: false
+
+jobs:
+  capability:
+    if: >-
+      github.repository == 'joshlf/gherrit-native-stack-experiments-2026-11-08' &&
+      github.actor == 'joshlf' &&
+      github.event_name == 'push' &&
+      github.event.created == true &&
+      github.event.deleted == false &&
+      github.ref == 'refs/heads/exh-1109-causal-rb-app-001/runner' &&
+      github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Checkout only the exact triggering source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - name: One guarded PUT without retries
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROBE_CONFIG_SHA256: 8a5eed309e1d98d5c9ac559fb7f05ce70f6886f3527cd963d02df629b9d31ac3
+        shell: bash
+        run: python3 probe.py fixture.json evidence
+      - name: Retain only sanitized probe files
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: exh-1109-causal-rb-app-001-${{ github.run_id }}-${{ github.run_attempt }}
+          path: evidence/*.json
+          if-no-files-found: error
+          retention-days: 90
+          include-hidden-files: false
