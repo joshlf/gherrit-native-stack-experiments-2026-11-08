@@ -1,0 +1,1 @@
+Isolated lower-A website stale-map debugger fixture.
